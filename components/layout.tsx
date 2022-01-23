@@ -6,14 +6,12 @@ const name = 'Manuel Puchta';
 
 type LayoutProps = {
   children: React.ReactNode;
-  footer?: boolean;
   title?: string;
   description?: string;
 };
 
 const Layout: React.FC<LayoutProps> = ({
   children,
-  footer,
   title,
   description,
 }: LayoutProps) => {
@@ -23,7 +21,7 @@ const Layout: React.FC<LayoutProps> = ({
     <>
       <Head>
         <title>{titleString}</title>
-        <meta name="og:title" content={titleString} />
+        <meta name="og:title" content={title} />
         {description && <meta name="description" content={description} />}
         <link rel="icon" href="/icons/favicon.ico" />
       </Head>

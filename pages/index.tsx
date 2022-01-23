@@ -6,8 +6,7 @@ import { GetStaticProps } from 'next';
 import Date from '../components/date';
 import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
-
-import portraitImage from '../public/images/portrait-500.jpg';
+import { imageLoader } from '../lib/imageLoader';
 
 type HomeProps = {
   allPostsData: Page[];
@@ -20,7 +19,8 @@ const Home: React.FC<HomeProps> = ({ allPostsData }: HomeProps) => (
   >
     <section>
       <Image
-        src={portraitImage}
+        loader={imageLoader}
+        src={'images/portrait-500.jpg'}
         alt="A black and white portrait of Manuel Puchta, the author of this website"
         width={300}
         height={300}

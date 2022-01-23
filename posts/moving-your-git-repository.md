@@ -1,15 +1,15 @@
 ---
 title: How to move your git repository to a new remote address
-description: Doing a git repository movement.
+description: Doing a git repository movement
 date: "2019-11-18"
 ---
 
 Little challenge today at work: We wanted to move a git repository to a new remote address.
-And we stumbled again upon a wrong `git remote` usage and had to do it twice. So if you wanna move a git repository with its entire git history use `git mirror`. Hopefully the following little reminder will help you and my future self to do a git repo movement in a more convinient way. 🌱
+And we stumbled again upon a wrong `git remote` usage and had to do it twice. So if you wanna move a git repository with its entire git history use `--mirror`. Hopefully the following little reminder will help you and my future self to do a git repo movement in a more convinient way. 🌱
 
 Let's assume you want to move your git repository from GitHub `git@github.com:manuelpuchta/a-nice-project.git` to Bitbucket `git@bitbucket.org:manuelpuchta/new-home-of-that-nice-project.git` with all of its branches, tags and commit history:
 
-## git mirror ftw!
+## Mirror usage
 
 First step: Clone your repository locally.
 

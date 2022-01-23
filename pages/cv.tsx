@@ -2,25 +2,24 @@ import React from 'react';
 import Image from 'next/image';
 
 import Layout from '../components/layout';
-
-import bananaSplitImage from '../public/images/banana-split.jpg';
+import { imageLoader } from '../lib/imageLoader';
 
 const CV: React.FC = () => (
   <Layout
     title="CV"
     description="Manuel Puchta is a web developer living in Hamburg"
-    footer
   >
     <section>
       <Image
         className="banana-split"
-        src={bananaSplitImage}
+        loader={imageLoader}
+        src={'images/banana-split.jpg'}
         alt="Portrait of Manuel Puchta, while eating ice cream in sunny south tyrol."
         width={400}
         height={266}
       />
       <ul>
-        <li>Hamburg</li>
+        <li>Location: Hamburg</li>
         <li>Mail: hallo[at]manuelpuchta.de</li>
         <li>
           Web:{' '}
@@ -78,7 +77,7 @@ const CV: React.FC = () => (
           <a href="https://kampagne.dfb.de" title="Current website state">
             DFB Ehrenrunde
           </a>{' '}
-          website (Jung von Matt)
+          website (Jung von Matt){' '}
           <a
             href="http://awardserver.de/2015/DFB_Ehrenrunde/"
             title="DFB Ehrenrunde award site"
@@ -108,7 +107,7 @@ const CV: React.FC = () => (
           >
             campaign
           </a>{' '}
-          platform (Jung von Matt)
+          platform (Jung von Matt){' '}
           <a
             href="https://www.jvm.com/en/cases/elbphilharmonie-grand-opening/"
             title="Elbphilharmonie case site"
@@ -138,7 +137,7 @@ const CV: React.FC = () => (
           >
             car configurator
           </a>{' '}
-          application for smart (Demodern)
+          application for smart (Demodern){' '}
           <a
             href="https://demodern.com/projects/smart-cc"
             title="Project page @ Demodern"

@@ -1,6 +1,6 @@
 ---
 title: Publishing and installing private hosted npm packages with Nexus as npm repository
-description: How to publish and install npm packages with Nexus
+description: How to publish and install npm packages with Nexus as npm repository
 date: "2020-08-20"
 ---
 
