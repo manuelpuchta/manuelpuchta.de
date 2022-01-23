@@ -16,7 +16,7 @@
     "lint": "eslint '*/**/*.{js,ts,tsx}'",
     "test": "echo \"Write tests!\"",
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start"
   },
   "dependencies": {
