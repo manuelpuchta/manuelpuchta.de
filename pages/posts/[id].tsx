@@ -11,7 +11,7 @@ const Post: React.FC<Post> = ({
   description,
   contentHtml,
 }: Post) => (
-  <Layout title={title} description={description}>
+  <Layout title={title} description={description} identifier="posts">
     <article>
       <Date dateString={date} />
       <h1>{title}</h1>

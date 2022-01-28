@@ -36,4 +36,4 @@ git clone git@bitbucket.org:manuelpuchta/new-home-of-that-nice-project.git
 cd new-home-of-that-nice-project/
 ```
 
-If you need more details and options (e.g. Git Large File Storage objects support), GitHub Help has a nice page that covers this scenario in depth: [https://help.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository).
+If you need more details and options (e.g. Git Large File Storage objects support) have a look at [this](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository) GitHub Help page that covers this scenario in depth.
