@@ -6,14 +6,16 @@ const name = 'Manuel Puchta';
 
 type LayoutProps = {
   children: React.ReactNode;
-  title?: string;
   description?: string;
+  identifier?: string;
+  title?: string;
 };
 
 const Layout: React.FC<LayoutProps> = ({
   children,
-  title,
   description,
+  identifier,
+  title,
 }: LayoutProps) => {
   const titleString = title ? `${title} | ${name}` : name;
 
@@ -35,7 +37,7 @@ const Layout: React.FC<LayoutProps> = ({
           </Link>
         </h1>
       </header>
-      <main>{children}</main>
+      <main className={identifier ? `${identifier}` : null}>{children}</main>
       <footer>
         <ul>
           <li>

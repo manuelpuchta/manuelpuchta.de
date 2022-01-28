@@ -16,6 +16,7 @@ const Home: React.FC<HomeProps> = ({ allPostsData }: HomeProps) => (
   <Layout
     title="Hi!"
     description="Manuel Puchta is a web developer living in Hamburg"
+    identifier="index"
   >
     <section>
       <Image
@@ -26,36 +27,33 @@ const Home: React.FC<HomeProps> = ({ allPostsData }: HomeProps) => (
         height={300}
       />
       <h2>Hello! I&apos;m Manuel, a web developer from Hamburg.</h2>
-      <h3>
+      <p>
         When I&apos;m not pushing pixels and code in front of a monitor, I love
         to ride far on my bike, listen to music or capture moments with a
         camera. 📸
-      </h3>
+      </p>
     </section>
     <section>
       <h2>Notes</h2>
       <ul>
         {allPostsData.map(({ id, date, title }) => (
-          <li key={id}>
-            <p>
+          <li key={id} className="post">
+            <h3>
               <Link href={`/posts/${id}`}>
                 <a>{title}</a>
               </Link>
-              <br />
-              <small>
-                <Date dateString={date} />
-              </small>
-            </p>
+            </h3>
+            <small>
+              <Date dateString={date} />
+            </small>
           </li>
         ))}
       </ul>
     </section>
     <section>
-      <h3>Say hi:</h3>
-      <ul>
-        <li>hallo[at]manuelpuchta.de</li>
-      </ul>
-      <h3>or stalk by...</h3>
+      <p>
+        Say hi <code>hallo[at]manuelpuchta.de</code> or stalk by:
+      </p>
       <ul>
         <li>
           <a
