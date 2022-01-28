@@ -152,10 +152,9 @@ const CV: React.FC = () => (
           <a href="https://www.tomorrow.one" title="Tomorrow website">
             tomorrow.one
           </a>{' '}
-          marketing website, self-service pages (password reset within customers
-          journey, for example) and the web sign up. To achieve that in a
-          scalable and maintainable way I introduced a design system (component
-          library) which powers almost all Tomorrow websites today.
+          marketing website, self-service pages and the web sign up. To achieve
+          scalability and maintainability I introduced a design system
+          (component library) which powers almost all Tomorrow websites today.
           <br />
           <cite>
             TypeScript, React, Redux, styled-components, Next.js, Storybook,
@@ -169,7 +168,7 @@ const CV: React.FC = () => (
       <h3>Skills</h3>
       <ul>
         <li>
-          <strong>(Frontend) Web Engineering</strong> 8+ years of experience,
+          <strong>(Frontend) Web Engineering</strong> 9+ years of experience,
           writing clean and maintainable code.
         </li>
         <li>
@@ -190,17 +189,17 @@ const CV: React.FC = () => (
           <strong>Technical Lead</strong> Software architecture, code review,
           communication, mentoring - I&apos;m always happy and curious to
           improve and reflect current workflows within the team and company in a
-          collaborative way. I&apos;m a fan of flat hierarchies, self-management
-          and empowerment.
+          collaborative way. I&apos;m a fan of flat hierarchies, transparency,
+          self-management and empowerment.
         </li>
         <li>
           <strong>Working remotely</strong>
         </li>
         <li>
-          <strong>Favourite tools, topics:</strong> React, Redux,
-          styled-components, SCSS, BEM, HTML5, Node.js, webpack, git
-          feature-branch workflow, test-driven development (TDD), CI/CD, DevOps,
-          Performance
+          <strong>Favourite tools, topics:</strong> React, Redux, CSS (SCSS),
+          styled-components, BEM, HTML5, Node.js, webpack, git feature-branch
+          workflow, test-driven development (TDD), CI/CD, DevOps, scalability,
+          performance
         </li>
       </ul>
     </section>
