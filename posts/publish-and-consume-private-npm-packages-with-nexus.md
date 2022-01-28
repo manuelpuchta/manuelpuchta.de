@@ -4,7 +4,7 @@ description: How to publish and install npm packages with Nexus as npm repositor
 date: "2020-08-20"
 ---
 
-First we need to [login](https://docs.npmjs.com/cli/v6/commands/npm-adduser) and generate an `authToken`. Within our setup at work we needed to enable the `npm Bearer Token Realm` (with read/write access to all repositories, e.g. group/private) to get the login workin, see [https://hackernoon.com/deploying-private-npm-packages-to-nexus-a16722cc8166](https://hackernoon.com/deploying-private-npm-packages-to-nexus-a16722cc8166) for more details on configuring authentication and much more, great article!
+First we need to [login](https://docs.npmjs.com/cli/v6/commands/npm-adduser) and generate an `authToken`. Within our setup at work we needed to enable the `npm Bearer Token Realm` (with read/write access to all repositories, e.g. group/private) to get the login workin, see [this post](https://hackernoon.com/deploying-private-npm-packages-to-nexus-a16722cc8166) for more details on configuring authentication and much more, great article!
 
 
 ```sh
