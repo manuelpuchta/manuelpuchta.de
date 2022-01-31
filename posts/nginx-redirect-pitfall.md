@@ -1,10 +1,10 @@
 ---
-title: A NGINX language and trailing slash redirect pitfall that resulted in a "This site can't be reached" error
+title: A NGINX redirect pitfall that resulted in a "This site can't be reached" error
 description: How to not configure NGINX language and trailing slash redirects with $http_host
 date: "2022-01-28"
 ---
 
-While working on the relaunch of [tomorrow.one](https://www.tomorrow.one/) early last year, we moved the whole web tech stack to [Kubernetes](https://kubernetes.io/) and switched to a project based dockerized NGINX setup for our web frontends. This allowed us to be more flexible with any upcoming requests, but it also opened the door for new challenges and pitfalls. Besides implementing language redirects for german and english browser languages we had to create and maintain a lot of outdated page redirects. Why? To ensure that we don't miss out on old URL traffic and we won't lose any potential customers that may still have some old URLs within their browsers history.
+While working on the relaunch of [tomorrow.one](https://www.tomorrow.one/) early last year, we moved the whole web tech stack to [Kubernetes](https://kubernetes.io/) and switched to a project based dockerized NGINX setup for our web frontends. This allowed us to be more flexible with any upcoming requests, but it also opened the door for new challenges and pitfalls. Besides implementing language redirects for german and english browser languages, we had to create and maintain a lot of outdated page redirects so that we don't miss out on old URL traffic and won't lose any potential customers.
 
 To get the new URL structure applied to all incoming requests I created the following redirect rule, which knows about `$language_suffix` through this [accept language](https://www.nginx.com/resources/wiki/modules/accept_language/#alternative) configuration, within a custom [NGINX conf file](http://nginx.org/en/docs/beginners_guide.html#conf_structure):
 
@@ -12,23 +12,23 @@ To get the new URL structure applied to all incoming requests I created the foll
 rewrite ^/$ https://$http_host/$language_suffix/ permanent;
 ```
 
-I tested all kinds of incoming request use cases of that nginx configuration while runnnig the docker container locally and was totally confident that everything would be redirected as expected, for example:
+I tested all kinds of incoming request use cases of that NGINX configuration while runnnig the docker container locally and was totally confident that everything would be redirected as expected. For example:
 
 * `http://localhost` redirects to `https://localhost/en-EU/` (if Accept-Language field in HTTP header includes `en`)
 
-In the test above you can see my main goal of getting the `https` and a [trailing slash](https://stackoverflow.com/search?q=nginx+trailing+slash) `/` applied correctly. After merging that update and testing all common redirect scenarios again within the platform on a testing environment, I was sure: **everything is running as expected**.
+In the test above you can see my main goal of getting the `https` and a missing [trailing slash](https://stackoverflow.com/search?q=nginx+trailing+slash) `/` applied correctly. After merging that update and testing all common redirect scenarios again within the platform on a testing environment, I was sure: **everything is running as expected**.
 
 Some days ago we wanted to improve our continuous integration (CI) workflow to decrease our pipeline runtimes and also the footprint that comes with it. We knew that we could switch to a different build pipeline approach for each needed environment by the help of some [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/) environment variables. Additionally we used that time to improve some CI configurations that would also increase the security aspect of maintaining needed environment varialbes. A win-win situation, yay!
 
 With the help of one of our Platform Engineers (Thanks René! 👋) we found a nice solution that allowed us to switch from four to only two docker images, while still being able to satisfy all needed testing and preview environments. This resulted in a build pipeline speed up by 50%, from ~20 minutes to ~10 minutes, awesome!
 
-After testing and merging this improvement I was confident and really happy: **everything was running as expected**.
+After testing and merging this improvement to production I was confident and really happy: **everything was running as expected**.
 
 But it wasn't this time. A few hours later customers and our support team got back to us and reported that they weren't able to access some of our web pages. A quick check showed us that some URLs were running into a *"This site can't be reached"* error. We also recognized that some requests were trapped in an endless redirect loop. But why?
 
 ![IT Crowd gif with computer programmer Maurice Moss](https://media.giphy.com/media/dbtDDSvWErdf2/giphy.gif "IT Crowd gif with computer programmer Maurice Moss")
 
-So we rolled back and had a deeper look on our recently added changes again. We introduced one major change with the update, that we were also easily recognizing within the not reachable URLs:
+So we rolled back and had a deeper look on our recently added changes again. We introduced one major change with the update that we were also easily recognizing within the not reachable URLs:
 
 ```sh
 - listen 80;
@@ -57,7 +57,7 @@ Location: https://localhost/en-EU/not/?so=cool
 HTTP/2 200
 ```
 
-Some [research](https://stackoverflow.com/a/15414811/1239760) later we were able to fix our redirect error by updating `$http_host` with `$host`. Learning: `$http_host` includes the port number (if present in request), `$host` doesn't. Additionally we needed to ensure port changes on [redirects](https://nginx.org/en/docs/http/ngx_http_core_module.html#absolute_redirect) weren't applied by setting `absolute_redirect off;` (this eliminates the 8080 port within a redirected URL I mentioned earlier).
+Some [research](https://stackoverflow.com/a/15414811/1239760) later we were able to fix our redirect error by updating `$http_host` with `$host`. Learning: `$http_host` includes the port number (if present in request), `$host` doesn't. Additionally we needed to ensure port changes on [redirects](https://nginx.org/en/docs/http/ngx_http_core_module.html#absolute_redirect) weren't applied by setting `absolute_redirect off;` (this eliminates the 8080 port being added to a redirected URL).
 
 So this **wasn't running as expected from day one**, but didn't come up earlier as other services (e.g. EC2 server) in front of this site were covering for that misconfiguration. With the switch to port 8080 we were able to identify this pitfall and improved the NGINX config to match our desired result:
 
@@ -83,4 +83,4 @@ location: /en-EU/not/?so=cool
 HTTP/2 200
 ```
 
-**Finally, everything is running as expected.**
+Finally, **everything was running as expected.**
