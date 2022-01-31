@@ -18,6 +18,7 @@ type LayoutProps = {
   published_time?: string;
 };
 
+// eslint-disable-next-line
 const Layout: React.FC<LayoutProps> = ({
   children,
   description,
@@ -47,6 +48,12 @@ const Layout: React.FC<LayoutProps> = ({
         <meta name="twitter:site" content="@manuelpuchta" />
         <meta name="twitter:creator" content="@manuelpuchta" />
         <link rel="icon" href="/icons/favicon.ico" />
+
+        <script
+          data-goatcounter="https://manuelpuchta.goatcounter.com/count"
+          async
+          src="//gc.zgo.at/count.js"
+        ></script>
       </Head>
       <header>
         <h1>
