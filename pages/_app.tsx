@@ -8,12 +8,12 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
   useEffect(() => {
     const handleRouteChange = (url: string) => {
-      if (window.goatcounter) {
-        window.goatcounter = { no_onload: true };
-        window.goatcounter.count({
-          path: url,
-        });
-      }
+      if (!window.goatcounter) return;
+
+      window.goatcounter.count({
+        path: url,
+        event: false,
+      });
     };
 
     router.events.on('routeChangeComplete', handleRouteChange);
