@@ -18,6 +18,7 @@ type LayoutProps = {
   published_time?: string;
 };
 
+// eslint-disable-next-line
 const Layout: React.FC<LayoutProps> = ({
   children,
   description,
@@ -73,6 +74,12 @@ const Layout: React.FC<LayoutProps> = ({
           </li>
         </ul>
       </footer>
+
+      <script
+        data-goatcounter="https://manuelpuchta.goatcounter.com/count"
+        async
+        src="//gc.zgo.at/count.js"
+      ></script>
     </>
   );
 };
