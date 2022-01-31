@@ -9,5 +9,6 @@ interface Post {
   date: string;
   description: string;
   id: string;
+  published_time: string;
   title: string;
 }

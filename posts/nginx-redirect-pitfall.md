@@ -1,7 +1,8 @@
 ---
 title: A NGINX redirect pitfall that resulted in a "This site can't be reached" error
-description: How to not configure NGINX language and trailing slash redirects with $http_host
-date: "2022-01-28"
+description: How to not configure a NGINX language and trailing slash redirect with $http_host and how to do it properly
+date: "2022-01-31"
+published_time: "2022-01-31 19:00:00 +0000 UTC"
 ---
 
 While working on the relaunch of [tomorrow.one](https://www.tomorrow.one/) early last year, we moved the whole web tech stack to [Kubernetes](https://kubernetes.io/) and switched to a project based dockerized NGINX setup for our web frontends. This allowed us to be more flexible with any upcoming requests, but it also opened the door for new challenges and pitfalls. Besides implementing language redirects for german and english browser languages, we had to create and maintain a lot of outdated page redirects so that we don't miss out on old URL traffic and won't lose any potential customers.

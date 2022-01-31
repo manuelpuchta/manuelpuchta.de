@@ -1,6 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import getConfig from 'next/config';
+import { useRouter } from 'next/router';
+
+const {
+  publicRuntimeConfig: { host },
+} = getConfig();
 
 const name = 'Manuel Puchta';
 
@@ -9,6 +15,7 @@ type LayoutProps = {
   description?: string;
   identifier?: string;
   title?: string;
+  published_time?: string;
 };
 
 const Layout: React.FC<LayoutProps> = ({
@@ -16,7 +23,9 @@ const Layout: React.FC<LayoutProps> = ({
   description,
   identifier,
   title,
+  published_time,
 }: LayoutProps) => {
+  const { asPath } = useRouter();
   const titleString = title ? `${title} | ${name}` : name;
 
   return (
@@ -25,6 +34,18 @@ const Layout: React.FC<LayoutProps> = ({
         <title>{titleString}</title>
         <meta name="og:title" content={title} />
         {description && <meta name="description" content={description} />}
+        {asPath && <meta property="og:url" content={`${host}${asPath}`} />}
+        <meta name="author" content={`${name}`} />
+        {published_time && (
+          <meta
+            property="article:published_time"
+            content={`${published_time}`}
+          />
+        )}
+        <meta property="og:image" content={`${host}/images/portrait-500.jpg`} />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@manuelpuchta" />
+        <meta name="twitter:creator" content="@manuelpuchta" />
         <link rel="icon" href="/icons/favicon.ico" />
       </Head>
       <header>

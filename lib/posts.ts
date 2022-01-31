@@ -68,8 +68,9 @@ export const getPostData = async (id: string): Promise<Post> => {
     contentHtml,
     ...(matterResult.data as {
       date: string;
-      title: string;
       description: string;
+      title: string;
+      published_time: string;
     }),
   };
 };
