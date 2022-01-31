@@ -26,8 +26,6 @@ After testing and merging this improvement to production I was confident and rea
 
 But it wasn't this time. A few hours later customers and our support team got back to us and reported that they weren't able to access some of our web pages. A quick check showed us that some URLs were running into a *"This site can't be reached"* error. We also recognized that some requests were trapped in an endless redirect loop. But why?
 
-![IT Crowd gif with computer programmer Maurice Moss](https://media.giphy.com/media/dbtDDSvWErdf2/giphy.gif "IT Crowd gif with computer programmer Maurice Moss")
-
 So we rolled back and had a deeper look on our recently added changes again. We introduced one major change with the update that we were also easily recognizing within the not reachable URLs:
 
 ```sh
