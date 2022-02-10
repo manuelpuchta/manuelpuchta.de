@@ -6,8 +6,9 @@ import { imageLoader } from '../lib/imageLoader';
 
 const CV: React.FC = () => (
   <Layout
-    title="CV"
-    description="Manuel Puchta is a web developer living in Hamburg"
+    metaData={{
+      title: 'CV',
+    }}
   >
     <section>
       <Image
