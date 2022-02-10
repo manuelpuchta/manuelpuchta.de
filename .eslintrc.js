@@ -21,7 +21,6 @@ module.exports = {
   rules: {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
     // e.g. "@typescript-eslint/explicit-function-return-type": "off",
-    complexity: ['warn', { max: 5 }],
     'max-nested-callbacks': ['warn', { max: 2 }],
     'max-depth': ['warn', { max: 3 }],
     'no-console': 'error',
