@@ -8,15 +8,22 @@ import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
 import { imageLoader } from '../lib/imageLoader';
 
+export enum PageType {
+  Index = 'index',
+  Posts = 'posts',
+  Cv = 'cv',
+}
+
 type HomeProps = {
   allPostsData: Page[];
 };
 
 const Home: React.FC<HomeProps> = ({ allPostsData }: HomeProps) => (
   <Layout
-    title="Hi!"
-    description="Manuel Puchta is a web developer living in Hamburg"
-    identifier="index"
+    metaData={{
+      title: 'Hi!',
+      identifier: PageType.Index,
+    }}
   >
     <section>
       <Image
@@ -26,7 +33,13 @@ const Home: React.FC<HomeProps> = ({ allPostsData }: HomeProps) => (
         width={300}
         height={300}
       />
-      <h2>Hello! I&apos;m Manuel, a web developer from Hamburg.</h2>
+      <h2>
+        Hello! I&apos;m Manuel, a{' '}
+        <Link href="/cv/">
+          <a title="This link will bring you to my CV page">web developer</a>
+        </Link>{' '}
+        from Hamburg.
+      </h2>
       <p>
         When I&apos;m not pushing pixels and code in front of a monitor, I love
         to ride far on my bike, listen to music or capture moments with a

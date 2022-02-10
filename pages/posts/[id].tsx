@@ -4,6 +4,7 @@ import { GetStaticProps, GetStaticPaths } from 'next';
 import Layout from '../../components/layout';
 import Date from '../../components/date';
 import { getAllPostIds, getPostData } from '../../lib/posts';
+import { PageType } from '..';
 
 const Post: React.FC<Post> = ({
   title,
@@ -13,10 +14,12 @@ const Post: React.FC<Post> = ({
   published_time,
 }: Post) => (
   <Layout
-    title={title}
-    description={description}
-    identifier="posts"
-    published_time={published_time}
+    metaData={{
+      title: title,
+      description: description,
+      identifier: PageType.Posts,
+      published_time: published_time,
+    }}
   >
     <article>
       <Date dateString={date} />

@@ -4,30 +4,39 @@ import Link from 'next/link';
 import getConfig from 'next/config';
 import { useRouter } from 'next/router';
 
+import { PageType } from '../pages';
+
 const {
   publicRuntimeConfig: { host },
 } = getConfig();
 
-const name = 'Manuel Puchta';
+const defaultName = 'Manuel Puchta';
+const defaultDescription = 'Manuel Puchta is a web developer living in Hamburg';
 
 type LayoutProps = {
   children: React.ReactNode;
-  description?: string;
-  identifier?: string;
-  title?: string;
-  published_time?: string;
+  metaData: {
+    description?: string;
+    identifier?: PageType;
+    title?: string;
+    published_time?: string;
+  };
 };
 
-// eslint-disable-next-line
-const Layout: React.FC<LayoutProps> = ({
-  children,
-  description,
-  identifier,
-  title,
-  published_time,
-}: LayoutProps) => {
+const Layout: React.FC<LayoutProps> = ({ children, metaData }: LayoutProps) => {
   const { asPath } = useRouter();
-  const titleString = title ? `${title} | ${name}` : name;
+
+  const {
+    description = defaultDescription,
+    identifier,
+    title,
+    published_time,
+  } = metaData;
+
+  const titleString = title ? `${title} | ${defaultName}` : defaultName;
+  const hideHomeLinkInFooter = identifier
+    ? identifier === PageType.Index
+    : false;
 
   return (
     <>
@@ -36,7 +45,7 @@ const Layout: React.FC<LayoutProps> = ({
         <meta name="og:title" content={title} />
         {description && <meta name="description" content={description} />}
         {asPath && <meta property="og:url" content={`${host}${asPath}`} />}
-        <meta name="author" content={`${name}`} />
+        <meta name="author" content={`${defaultName}`} />
         {published_time && (
           <meta
             property="article:published_time"
@@ -59,27 +68,24 @@ const Layout: React.FC<LayoutProps> = ({
         <h1>
           <Link href="/">
             <a title="Back to the home page">
-              {name}
+              {defaultName}
               <span className="caret" />
             </a>
           </Link>
         </h1>
       </header>
       <main className={identifier ? `${identifier}` : null}>{children}</main>
-      <footer>
-        <ul>
-          <li>
-            <Link href="/">
-              <a title="Back to the home page">Home</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/cv/">
-              <a title="Will bring you to my CV page">CV</a>
-            </Link>
-          </li>
-        </ul>
-      </footer>
+      {!hideHomeLinkInFooter && (
+        <footer>
+          <ul>
+            <li>
+              <Link href="/">
+                <a title="Back to the home page">Home</a>
+              </Link>
+            </li>
+          </ul>
+        </footer>
+      )}
     </>
   );
 };
