@@ -1,8 +1,8 @@
 ---
 title: A NGINX redirect pitfall that resulted in a "This site can't be reached" error
 description: How to not configure a NGINX language and trailing slash redirect with $http_host and how to do it properly
-date: "2022-01-31"
-published_time: "2022-01-31 19:00:00 +0000 UTC"
+date: '2022-01-31'
+published_time: '2022-01-31 19:00:00 +0000 UTC'
 ---
 
 While working on the relaunch of [tomorrow.one](https://www.tomorrow.one/) early last year, we moved the whole web tech stack to [Kubernetes](https://kubernetes.io/) and switched to a project based dockerized NGINX setup for our web frontends. This allowed us to be more flexible with any upcoming requests, but it also opened the door for new challenges and pitfalls. Besides implementing language redirects for german and english browser languages, we had to create and maintain a lot of outdated page redirects so that we don't miss out on old URL traffic and won't lose any potential customers.
@@ -15,17 +15,17 @@ rewrite ^/$ https://$http_host/$language_suffix/ permanent;
 
 I tested all kinds of incoming request use cases of that NGINX configuration while runnnig the docker container locally and was totally confident that everything would be redirected as expected. For example:
 
-* `http://localhost` redirects to `https://localhost/en-EU/` (if Accept-Language field in HTTP header includes `en`)
+- `http://localhost` redirects to `https://localhost/en-EU/` (if Accept-Language field in HTTP header includes `en`)
 
 In the test above you can see my main goal of getting the `https` and a missing [trailing slash](https://stackoverflow.com/search?q=nginx+trailing+slash) `/` applied correctly. After merging that update and testing all common redirect scenarios again within the platform on a testing environment, I was sure: **everything is running as expected**.
 
 Some days ago we wanted to improve our continuous integration (CI) workflow to decrease our pipeline runtimes and also the footprint that comes with it. We knew that we could switch to a different build pipeline approach for each needed environment by the help of some [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/) environment variables. Additionally we used that time to improve some CI configurations that would also increase the security aspect of maintaining needed environment varialbes. A win-win situation, yay!
 
-With the help of one of our Platform Engineers (Thanks René! 👋) we found a nice solution that allowed us to switch from four to only two docker images, while still being able to satisfy all needed testing and preview environments. This resulted in a build pipeline speed up by 50%, from ~20 minutes to ~10 minutes, awesome!
+With the help of one of our Platform Engineers (Thanks René! 👋) we found a nice solution that allowed us to switch from four to only two docker images, while still being able to satisfy all needed testing and preview environments. This resulted in a build pipeline speed up by ~30%, awesome!
 
 After testing and merging this improvement to production I was confident and really happy: **everything was running as expected**.
 
-But it wasn't this time. A few hours later customers and our support team got back to us and reported that they weren't able to access some of our web pages. A quick check showed us that some URLs were running into a *"This site can't be reached"* error. We also recognized that some requests were trapped in an endless redirect loop. But why?
+But it wasn't this time. A few hours later customers and our support team got back to us and reported that they weren't able to access some of our web pages. A quick check showed us that some URLs were running into a _"This site can't be reached"_ error. We also recognized that some requests were trapped in an endless redirect loop. But why?
 
 So we rolled back and had a deeper look on our recently added changes again. We introduced one major change with the update that we were also easily recognizing within the not reachable URLs:
 
