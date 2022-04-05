@@ -21,7 +21,7 @@ In the test above you can see my main goal of getting the `https` and a missing 
 
 Some days ago we wanted to improve our continuous integration (CI) workflow to decrease our pipeline runtimes and also the footprint that comes with it. We knew that we could switch to a different build pipeline approach for each needed environment by the help of some [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/) environment variables. Additionally we used that time to improve some CI configurations that would also increase the security aspect of maintaining needed environment varialbes. A win-win situation, yay!
 
-With the help of one of our Platform Engineers (Thanks René! 👋) we found a nice solution that allowed us to switch from four to only two docker images, while still being able to satisfy all needed testing and preview environments. This resulted in a build pipeline speed up by ~30%, awesome!
+With the help of one of our Platform Engineers (Thanks René! 👋) we found a nice solution that allowed us to switch from four to three docker images, while still being able to satisfy all needed testing and preview environments. This resulted in a build pipeline speed up by ~30%, awesome!
 
 After testing and merging this improvement to production I was confident and really happy: **everything was running as expected**.
 
