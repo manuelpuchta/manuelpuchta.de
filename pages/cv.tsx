@@ -101,7 +101,7 @@ const CV: React.FC = () => (
           <cite>Vanilla JS, SCSS</cite>
         </li>
         <li>
-          <strong>2016</strong> Web Development :: Countdown Elbphilharmonie
+          <strong>2016</strong> Web Development :: Countdown Elbphilharmonie{' '}
           <a
             href="https://www.elbphilharmonie.de/en/mediatheque/next-door#!/"
             title="One of the developed campaign specials: Discover spots around the Elbphilharmonie"
@@ -150,12 +150,16 @@ const CV: React.FC = () => (
         </li>
         <li>
           <strong>Since 2020</strong> Web Engineering :: relaunching{' '}
-          <a href="https://www.tomorrow.one" title="Tomorrow website">
+          <a href="https://www.tomorrow.one" title="Tomorrow marketing website">
             tomorrow.one
           </a>{' '}
-          marketing website, self-service pages and the web sign up. To achieve
-          scalability and maintainability I introduced a design system
-          (component library) which powers almost all Tomorrow websites today.
+          marketing website, self-service pages and{' '}
+          <a href="https://get.tomorrow.one" title="Tomorrow web sign up">
+            sign up
+          </a>
+          . To achieve scalability and maintainability I introduced a design
+          system (component library) which powers almost all Tomorrow websites
+          today.
           <br />
           <cite>
             TypeScript, React, Redux, styled-components, Next.js, Storybook,
