@@ -1,8 +1,6 @@
 import React from 'react';
-import Image from 'next/image';
 
 import Layout from '../components/layout';
-import { imageLoader } from '../lib/imageLoader';
 
 const CV: React.FC = () => (
   <Layout
@@ -11,24 +9,16 @@ const CV: React.FC = () => (
     }}
   >
     <section>
-      <Image
-        className="banana-split"
-        loader={imageLoader}
-        src={'images/banana-split.jpg'}
-        alt="Portrait of Manuel Puchta, while eating ice cream in sunny south tyrol."
-        width={400}
-        height={266}
-      />
-      <ul>
-        <li>Location: Hamburg</li>
-        <li>Mail: hallo[at]manuelpuchta.de</li>
-        <li>
-          Web:{' '}
-          <a href="https://manuelpuchta.de" title="My website.">
-            https://manuelpuchta.de
-          </a>
-        </li>
-      </ul>
+      <p>
+        Location: Hamburg
+        <br />
+        Mail: hallo[at]manuelpuchta.de
+        <br />
+        Web:{' '}
+        <a href="https://manuelpuchta.de" title="My website.">
+          https://manuelpuchta.de
+        </a>
+      </p>
     </section>
     <section>
       <p>
@@ -201,10 +191,10 @@ const CV: React.FC = () => (
           <strong>Working remotely</strong>
         </li>
         <li>
-          <strong>Favourite tools, topics:</strong> React, Redux, CSS (SCSS),
-          styled-components, BEM, HTML5, Node.js, webpack, git feature-branch
-          workflow, test-driven development (TDD), CI/CD, DevOps, scalability,
-          performance
+          <strong>Favourite tools, topics:</strong> JavaScript (ES Next,
+          TypeScript / React, Redux), HTML5, CSS3 (SCSS, CSS in JS), Node.js,
+          webpack, Babel, git feature-branch workflow, test-driven development
+          (TDD) with Jest, CI/CD, DevOps, scalability, performance
         </li>
       </ul>
     </section>
