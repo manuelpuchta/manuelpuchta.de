@@ -35,7 +35,7 @@ const CV: React.FC = () => (
           Hof
         </li>
         <li>
-          <strong>2012</strong> Medieninformatik, Bachelor of Science (B.Sc.),
+          <strong>2012</strong> Media Informatics, Bachelor of Science (B.Sc.),
           University of Applied Sciences Hof
         </li>
       </ul>
@@ -144,7 +144,10 @@ const CV: React.FC = () => (
             tomorrow.one
           </a>{' '}
           marketing website, self-service pages and{' '}
-          <a href="https://get.tomorrow.one" title="Tomorrow web sign up">
+          <a
+            href="https://get.tomorrow.one/en-EU/start/"
+            title="Tomorrow web sign up"
+          >
             sign up
           </a>
           . To achieve scalability and maintainability I introduced a design
