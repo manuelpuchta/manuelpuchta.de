@@ -3,17 +3,18 @@ html {
   --c-typo-hover: #933;
   --c-border: #d3d3d3;
   --bg-code: #f6f6f6;
-  --bg-cite: rgba(153,51,51,0.25);
+  --bg-cite: rgba(153, 51, 51, 0.25);
   --max-width: 40rem;
   --duration-200: 200ms;
 }
 
 @keyframes blinking-caret {
-  from, to {
-    border-color:var(--c-typo);
+  from,
+  to {
+    border-color: var(--c-typo);
   }
   50% {
-    border-color:transparent;
+    border-color: transparent;
   }
 }
 
@@ -29,7 +30,9 @@ body > div {
   padding: 0 1rem;
 }
 
-header, main, footer {
+header,
+main,
+footer {
   margin: 1rem auto;
 }
 
@@ -37,7 +40,8 @@ header a {
   text-decoration: none;
 }
 
-main, footer {
+main,
+footer {
   max-width: var(--max-width);
 }
 
@@ -92,7 +96,10 @@ cite {
   background-color: var(--bg-cite);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.2;
 }
 
@@ -103,6 +110,10 @@ a {
 
 a:hover {
   color: var(--c-typo-hover);
+}
+
+li {
+  margin: 0.5rem 0;
 }
 
 .caret {
