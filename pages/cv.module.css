@@ -1,0 +1,37 @@
+.cv {
+  margin: 7rem 1rem;
+}
+
+.cv header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+@media (min-width: 64rem) {
+  .cv header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.cv header aside > * {
+  margin: 0.5rem 0;
+}
+
+.cv section {
+  margin: 3rem 0;
+}
+
+.cv h2 {
+  border-bottom: 0.125rem solid var(--c-typo);
+}
+
+.cv ul li {
+  margin: 1rem 0;
+}
+
+.work > ul > li {
+  margin: 2rem 0;
+}

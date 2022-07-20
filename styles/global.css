@@ -1,80 +1,36 @@
-html {
-  --c-typo: #212121;
-  --c-typo-hover: #933;
-  --c-border: #d3d3d3;
-  --bg-code: #f6f6f6;
-  --bg-cite: rgba(153, 51, 51, 0.25);
-  --max-width: 40rem;
-  --duration-200: 200ms;
-}
+/*
+  ## Responsive stylying
+  
+  Mobile first thinking, the following media query
+  breakpoints can be used:
+  - 1. breakpoint: 40rem (@see footer.module.css)
+  - 2. breakpoint: 64rem (@see index.module.css)
+*/
 
-@keyframes blinking-caret {
-  from,
-  to {
-    border-color: var(--c-typo);
-  }
-  50% {
-    border-color: transparent;
-  }
+html {
+  --c-signal-a: #e54c4c;
+  --c-signal-b: #993232;
+  --c-typo: #212121;
+  --c-typo-i: #f6f6f6;
+  --c-typo-a: var(--c-signal-a);
+  --c-typo-a-hover: var(--c-signal-b);
+  --c-typo-a-i: var(--c-typo-i);
+  --c-typo-a-i-hover: var(--c-signal-b);
+  --bg-cite: rgba(153, 51, 51, 0.25);
+  --bg-code: var(--c-typo-i);
+  --bg-i: var(--c-typo);
+  --border-size: 0.25rem;
+  --max-width: 44rem;
+  --max-width-l: 60rem;
+  --duration-200: 200ms;
 }
 
 html,
 body {
-  margin: 0 0 3rem;
+  margin: 0;
   padding: 0;
   color: var(--c-typo);
   line-height: 1.5;
-}
-
-body > div {
-  padding: 0 1rem;
-}
-
-header,
-main,
-footer {
-  margin: 1rem auto;
-}
-
-header a {
-  text-decoration: none;
-}
-
-main,
-footer {
-  max-width: var(--max-width);
-}
-
-section {
-  margin: 2.5rem 0;
-}
-
-.index section {
-  margin: 5rem 0;
-}
-
-.posts img {
-  display: block;
-  max-width: 100%;
-}
-
-footer {
-  text-align: center;
-  margin-top: 4rem;
-}
-
-footer ul {
-  list-style: none;
-  padding: 0;
-}
-
-footer li {
-  display: inline-block;
-  margin-left: 1rem;
-}
-
-footer li:first-child {
-  margin-left: 0;
 }
 
 pre {
@@ -99,34 +55,46 @@ cite {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
+  /* @see: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/ */
+  font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, “Roboto”, “Oxygen”,
+    “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”,
+    sans-serif;
   line-height: 1.2;
 }
 
 a {
-  color: var(--c-typo);
+  color: var(--c-typo-a);
   transition: color var(--duration-200);
 }
 
 a:hover {
-  color: var(--c-typo-hover);
+  color: var(--c-typo-a-hover);
+}
+
+.inverted {
+  color: var(--c-typo-i);
+  background-color: var(--bg-i);
+}
+
+.inverted a {
+  color: var(--c-typo-a-i);
+}
+
+.inverted a:hover {
+  color: var(--c-typo-a-i-hover);
 }
 
 li {
   margin: 0.5rem 0;
 }
 
-.caret {
-  display: inline;
-  padding-left: 0.5rem;
-  border-right: 1rem solid var(--c-typo);
-  animation: blinking-caret 1s step-end infinite;
-}
-
 .post h3 {
   margin-bottom: 0;
 }
 
-.banana-split {
-  filter: brightness(1.2) grayscale(1);
+.posts img {
+  display: block;
+  max-width: 100%;
 }
