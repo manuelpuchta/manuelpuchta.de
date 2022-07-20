@@ -1,7 +1,7 @@
 {
   "name": "manuelpuchta.de",
   "description": "My personal website, built with Next.js",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Manuel Puchta <dev@manuelpuchta.de>",
   "homepage": "https://github.com/manuelpuchta/manuelpuchta.de#readme",
   "license": "MIT",
