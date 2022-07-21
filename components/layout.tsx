@@ -55,6 +55,7 @@ const Layout: React.FC<LayoutProps> = ({ children, metaData }: LayoutProps) => {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@manuelpuchta" />
         <meta name="twitter:creator" content="@manuelpuchta" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icons/favicon.ico" />
 
         <script

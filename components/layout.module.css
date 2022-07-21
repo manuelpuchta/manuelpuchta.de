@@ -1,9 +1,9 @@
 .main {
-  margin: 3rem auto;
+  margin: 0 auto;
   max-width: var(--max-width-l);
 }
 
 .mainPosts {
-  margin: 3rem auto;
+  margin: 0 auto;
   max-width: var(--max-width);
 }

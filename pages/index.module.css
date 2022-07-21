@@ -129,9 +129,8 @@
 
 /* layout div within fourth div.grid */
 .stalking {
-  /* 18.75rem ~ 300px */
-  width: 18.75rem;
-  height: 18.75rem;
+  width: 15rem; /* 240px */
+  height: 15rem; /* 240px */
   display: flex;
   position: relative;
   overflow: hidden;

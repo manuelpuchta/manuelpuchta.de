@@ -29,10 +29,14 @@ html {
 
   --border-size: 0.25rem;
 
-  --max-width: 44rem;
-  --max-width-l: 60rem;
+  --max-width: 40rem;
+  --max-width-l: 50rem;
 
   --duration-200: 200ms;
+}
+
+html {
+  font-size: 120%;
 }
 
 html,
