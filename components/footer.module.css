@@ -1,5 +1,9 @@
 .footer {
-  border-top: 4rem solid var(--c-signal-a);
+  background: radial-gradient(var(--c-comp-3), var(--c-comp-4));
+}
+
+.footer a:hover {
+  color: var(--c-typo);
 }
 
 .footer > div {

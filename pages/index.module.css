@@ -43,6 +43,8 @@
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
+  margin: 1rem;
+  border: var(--border-size) solid var(--c-comp-4);
 }
 
 @media (min-width: 40rem) {
@@ -127,29 +129,19 @@
 
 /* layout div within fourth div.grid */
 .stalking {
-  width: 275px;
-  height: 275px;
+  /* 18.75rem ~ 300px */
+  width: 18.75rem;
+  height: 18.75rem;
   display: flex;
   position: relative;
   overflow: hidden;
-}
-
-.stalking:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border-radius: 100%;
-  border: var(--border-size) dashed var(--c-typo);
-  animation: rotate 30s linear infinite;
 }
 
 .stalking svg {
   position: absolute;
   top: 0;
   left: 0;
+  animation: rotate 45s linear infinite;
 }
 
 .stalking ul {
@@ -157,14 +149,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  list-style: none;
   padding: 0;
   margin: 0;
+  list-style: none;
   text-align: center;
 }
 
 .stalking li {
-  font-size: 0.75rem;
   display: inline-flex;
+  /* font-size: 0.75rem; */
   margin: 0.5rem;
 }

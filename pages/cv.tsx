@@ -36,20 +36,16 @@ const CV: React.FC = () => {
 
         <section>
           <p>
-            <strong>I&apos;m a web engineer.</strong> What I love to do:
+            <strong>I&apos;m a Web Engineer.</strong> What I love to do:
             Building easy-to-use interfaces that put a smile on the face of
-            people using them and at the same time scale beautifully. Shipping
-            frequently to live. Understanding the product strategy and pushing
-            it together with a team and involved stakeholders to the next level.
+            people using them. Ensuring that everything scales well by designing
+            and implementing the underlying architecture. Shipping frequently to
+            live. Making a product better. Working in a team.
           </p>
         </section>
 
         <section className={styles.work}>
           <h2>Work</h2>
-          <p>
-            I&apos;ve been working with clients such as BMW, Bosch, DFB,
-            Elbphilharmonie, Mercedes-Benz, smart and more.
-          </p>
           <ul>
             <li>
               <h3>
@@ -62,9 +58,10 @@ const CV: React.FC = () => {
                 <strong>(~2 years)</strong> Apr 2020 - Jun 2022, Hamburg
                 (Germany)
               </p>
+              <p>Teams: Customer Relationship and Growth</p>
               <p>
                 Web Engineering :: I planned and established a future proof web
-                tech stack from scratch:
+                tech stack from scratch
               </p>
               <ul>
                 <li>
@@ -96,6 +93,7 @@ const CV: React.FC = () => {
                   Created dockerized web frontend{' '}
                   <strong>deployments to Kubernetes</strong>.
                 </li>
+                🧰{' '}
                 <cite>
                   TypeScript, React, Redux, styled-components, Next.js,
                   Storybook, npm, Jest, Testing Library, Node.js, Headless CMS,
@@ -126,7 +124,7 @@ const CV: React.FC = () => {
                   >
                     car configurator
                   </a>{' '}
-                  application for smart. (Demodern){' '}
+                  application for smart.{' '}
                   <a
                     href="https://demodern.com/projects/smart-cc"
                     title="Project page @ Demodern"
@@ -134,6 +132,7 @@ const CV: React.FC = () => {
                     [more information]
                   </a>
                   <br />
+                  🧰{' '}
                   <cite>
                     React, Redux, styled-components, webpack, Jest, Jenkins, PCF
                   </cite>
@@ -142,7 +141,7 @@ const CV: React.FC = () => {
                 <li>
                   2018 <strong>Web Engineering</strong> :: As part of a two to
                   five-person development team we created an automotive retail
-                  experience for smart. (Demodern){' '}
+                  experience for smart.{' '}
                   <a
                     href="https://demodern.com/projects/smart-cities-retail-experience"
                     title="Project page @ Demodern"
@@ -150,14 +149,14 @@ const CV: React.FC = () => {
                     [more information]
                   </a>
                   <br />
-                  <cite>React, Redux, SCSS, webpack</cite>
+                  🧰 <cite>React, Redux, SCSS, webpack</cite>
                 </li>
               </ul>
             </li>
 
             <li>
               <h3>
-                Internship, (Junior) Web Developer @{' '}
+                (Junior) Web Developer @{' '}
                 <a href="https://www.jvm.com" title="Jung von Matt website">
                   Jung von Matt
                 </a>
@@ -178,7 +177,7 @@ const CV: React.FC = () => {
                   >
                     Countdown Elbphilharmonie
                   </a>
-                  &quot;. (Jung von Matt){' '}
+                  &quot;.{' '}
                   <a
                     href="https://www.jvm.com/en/cases/elbphilharmonie-grand-opening/"
                     title="Elbphilharmonie case site"
@@ -186,7 +185,7 @@ const CV: React.FC = () => {
                     [more information]
                   </a>
                   <br />
-                  <cite>Django, AngularJS v1, SCSS with BEM</cite>
+                  🧰 <cite>Django, AngularJS v1, SCSS with BEM</cite>
                 </li>
 
                 <li>
@@ -194,7 +193,7 @@ const CV: React.FC = () => {
                   four-person development team we developed a full screen
                   video-like web application that allowed users to discover BMWs
                   vision car interactively (custom Vanilla JS MVC application),
-                  called BMW VISION NEXT 100 special. (Jung von Matt){' '}
+                  called BMW VISION NEXT 100 special.{' '}
                   <a
                     href="https://www.jvm.com/de/cases/bmw-100/"
                     title="BMW Next 100 project site"
@@ -202,7 +201,7 @@ const CV: React.FC = () => {
                     [more information]
                   </a>
                   <br />
-                  <cite>Vanilla JS, SCSS</cite>
+                  🧰 <cite>Vanilla JS, SCSS</cite>
                 </li>
 
                 <li>
@@ -215,9 +214,9 @@ const CV: React.FC = () => {
                   >
                     DFB Ehrenrunde
                   </a>
-                  &quot;. (Jung von Matt)
+                  &quot;.
                   <br />
-                  <cite>AngularJS v1, Less</cite>
+                  🧰 <cite>AngularJS v1, Less</cite>
                 </li>
               </ul>
             </li>
@@ -256,7 +255,8 @@ const CV: React.FC = () => {
             </li>
 
             <li>
-              <strong>Prototyping</strong>
+              <strong>Prototyping</strong> I like to verify new product ideas
+              through prototypes.
             </li>
 
             <li>
@@ -275,7 +275,9 @@ const CV: React.FC = () => {
             </li>
 
             <li>
-              <strong>Working remotely</strong>
+              <strong>Working remotely</strong> I see a lot of advantages in
+              remote work, especially when lot&apos;s of communication and
+              supportive processes are established within a company.
             </li>
 
             <li>

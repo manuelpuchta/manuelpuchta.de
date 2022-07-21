@@ -55,7 +55,7 @@ const Home: React.FC<HomeProps> = ({ allPostsData }: HomeProps) => (
           <p>
             When I&apos;m not pushing pixels and code in front of a monitor, I
             love to ride far on my bike, listen to music or capture moments with
-            a camera. 📸
+            my camera. 📸
           </p>
         </div>
       </div>
@@ -93,20 +93,16 @@ const Home: React.FC<HomeProps> = ({ allPostsData }: HomeProps) => (
             />
             <text width="300">
               <textPath xlinkHref="#circle" fontSize={'1.25rem'}>
-                Send nice emails &rarr; hallo[at]manuelpuchta.de || stalk by:
+                Send nice emails &rarr;{' '}
+                <a href="mailto:hallo@manuelpuchta.de">
+                  hallo[at]manuelpuchta.de
+                </a>{' '}
+                || stalk by:
               </textPath>
             </text>
           </svg>
 
           <ul>
-            <li>
-              <a
-                href="https://www.flickr.com/photos/manuelpuchta/"
-                title="I have some photos uploaded to my flickr stream."
-              >
-                flickr
-              </a>
-            </li>
             <li>
               <a
                 href="https://github.com/manuelpuchta"
@@ -117,42 +113,10 @@ const Home: React.FC<HomeProps> = ({ allPostsData }: HomeProps) => (
             </li>
             <li>
               <a
-                href="https://instagram.com/manuelpuchta"
-                title="Help me to get more likes on my Instagram photos, please."
-              >
-                Instagram
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.komoot.com/user/911055856910"
-                title="If you are into cycling: I share some of my favourite cycling routes on Komoot."
-              >
-                Komoot
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://www.linkedin.com/in/manuelpuchta/"
                 title="I have a LinkedIn profile."
               >
                 LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://open.spotify.com/user/dvjcg7g517s9rdfnhr93sgodx?si=d025f791cecb4a09"
-                title="And what is your taste in music?"
-              >
-                Spotify
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.strava.com/athletes/44997462"
-                title="Let's give each other Kudos, yeah!"
-              >
-                Strava
               </a>
             </li>
             <li>

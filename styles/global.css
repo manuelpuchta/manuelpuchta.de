@@ -8,20 +8,30 @@
 */
 
 html {
-  --c-signal-a: #e54c4c;
-  --c-signal-b: #993232;
+  --c-comp-1: #aaddaa;
+  --c-comp-2: #72ab92;
+  --c-comp-3: #2c7857;
+  --c-comp-4: #e276e2;
+  --c-comp-5: #9b72ab;
+
+  --c-signal-a: var(--c-comp-3);
+  --c-signal-b: var(--c-comp-4);
+
   --c-typo: #212121;
   --c-typo-i: #f6f6f6;
   --c-typo-a: var(--c-signal-a);
   --c-typo-a-hover: var(--c-signal-b);
   --c-typo-a-i: var(--c-typo-i);
-  --c-typo-a-i-hover: var(--c-signal-b);
-  --bg-cite: rgba(153, 51, 51, 0.25);
+  --c-typo-a-i-hover: var(--c-comp-2);
+
   --bg-code: var(--c-typo-i);
   --bg-i: var(--c-typo);
+
   --border-size: 0.25rem;
+
   --max-width: 44rem;
   --max-width-l: 60rem;
+
   --duration-200: 200ms;
 }
 
@@ -47,9 +57,7 @@ code:not(pre code) {
 }
 
 cite {
-  font-size: 75%;
-  padding: 0 0.3rem;
-  background-color: var(--bg-cite);
+  font-size: 80%;
 }
 
 h1,

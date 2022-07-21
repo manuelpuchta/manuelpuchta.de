@@ -1,20 +1,14 @@
 .navigation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  margin: 0 auto;
+  max-width: var(--max-width-l);
 }
 
 .navigation ul {
-  margin: 1rem 0.5rem;
+  display: inline-flex;
+  margin: 1rem;
   padding: 0;
   list-style: none;
-}
-
-@media (min-width: 40rem) {
-  .navigation ul {
-    margin: 1rem;
-  }
+  border: var(--border-size) solid var(--c-comp-4);
 }
 
 .navigation li {
@@ -22,15 +16,9 @@
 }
 
 .navigation a {
+  display: flex;
   text-decoration: none;
-  font-size: 0.75rem;
-  padding: 0.5rem 0;
-}
-
-@media (min-width: 40rem) {
-  .navigation a {
-    font-size: 1rem;
-  }
+  padding: 0.5rem 1rem;
 }
 
 .navigation .active {
