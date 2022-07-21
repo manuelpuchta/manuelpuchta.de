@@ -1,5 +1,11 @@
 .cv {
-  margin: 7rem 1rem;
+  margin: 3rem 1rem 7rem;
+}
+
+@media (min-width: 64rem) {
+  .cv {
+    margin: 7rem 1rem;
+  }
 }
 
 .cv header {
@@ -8,7 +14,7 @@
   flex-direction: column;
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 30rem) {
   .cv header {
     flex-direction: row;
     justify-content: space-between;

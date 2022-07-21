@@ -276,8 +276,8 @@ const CV: React.FC = () => {
 
             <li>
               <strong>Working remotely</strong> I see a lot of advantages in
-              remote work, especially when lot&apos;s of communication and
-              supportive processes are established within a company.
+              remote work, especially when good communication and supportive
+              processes are established within a company.
             </li>
 
             <li>

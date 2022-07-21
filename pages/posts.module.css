@@ -1,3 +1,9 @@
 .posts {
-  margin: 7rem 1rem;
+  margin: 3rem 1rem 7rem;
+}
+
+@media (min-width: 64rem) {
+  .posts {
+    margin: 7rem 1rem;
+  }
 }
