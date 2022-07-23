@@ -34,7 +34,7 @@ const Layout: React.FC<LayoutProps> = ({ children, metaData }: LayoutProps) => {
     title,
   } = metaData;
   const titleString = title ? `${title} | ${defaultName}` : defaultName;
-  const postsMaxWidth =
+  const addPostsStyles =
     identifier === PageType.Post || identifier === PageType.Posts;
 
   return (
@@ -67,7 +67,7 @@ const Layout: React.FC<LayoutProps> = ({ children, metaData }: LayoutProps) => {
 
       <Navigation active={identifier} />
 
-      <main className={postsMaxWidth ? styles.mainPosts : styles.main}>
+      <main className={addPostsStyles ? styles.mainPosts : styles.main}>
         {children}
       </main>
 
