@@ -1,7 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
-import getConfig from 'next/config';
 import { useRouter } from 'next/router';
+import getConfig from 'next/config';
+import Script from 'next/script';
 
 import { PageType } from '../pages';
 import Footer from './footer';
@@ -57,12 +58,6 @@ const Layout: React.FC<LayoutProps> = ({ children, metaData }: LayoutProps) => {
         <meta name="twitter:creator" content="@manuelpuchta" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icons/favicon.ico" />
-
-        <script
-          data-goatcounter="https://manuelpuchta.goatcounter.com/count"
-          async
-          src="//gc.zgo.at/count.js"
-        ></script>
       </Head>
 
       <Navigation active={identifier} />
@@ -72,6 +67,12 @@ const Layout: React.FC<LayoutProps> = ({ children, metaData }: LayoutProps) => {
       </main>
 
       <Footer />
+
+      <Script
+        id="goatcounter"
+        data-goatcounter="https://manuelpuchta.goatcounter.com/count"
+        src="//gc.zgo.at/count.js"
+      />
     </>
   );
 };
