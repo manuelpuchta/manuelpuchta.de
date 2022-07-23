@@ -8,21 +8,19 @@
 */
 
 html {
-  --c-comp-1: #aaddaa;
-  --c-comp-2: #72ab92;
-  --c-comp-3: #2c7857;
-  --c-comp-4: #e276e2;
-  --c-comp-5: #9b72ab;
+  --c-comp-a: #72ab92;
+  --c-comp-b: #2c7857;
+  --c-comp-c: #e276e2;
 
-  --c-signal-a: var(--c-comp-3);
-  --c-signal-b: var(--c-comp-4);
+  --c-signal-a: var(--c-comp-b);
+  --c-signal-b: var(--c-comp-c);
 
   --c-typo: #212121;
   --c-typo-i: #f6f6f6;
   --c-typo-a: var(--c-signal-a);
   --c-typo-a-hover: var(--c-signal-b);
   --c-typo-a-i: var(--c-typo-i);
-  --c-typo-a-i-hover: var(--c-comp-2);
+  --c-typo-a-i-hover: var(--c-comp-a);
 
   --bg-code: var(--c-typo-i);
   --bg-i: var(--c-typo);

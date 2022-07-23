@@ -1,5 +1,5 @@
 .footer {
-  background: radial-gradient(var(--c-comp-3), var(--c-comp-4));
+  background: radial-gradient(var(--c-comp-b), var(--c-comp-c));
 }
 
 .footer a:hover {
