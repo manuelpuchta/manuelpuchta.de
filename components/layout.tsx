@@ -34,7 +34,7 @@ const Layout: React.FC<LayoutProps> = ({ children, metaData }: LayoutProps) => {
     title,
   } = metaData;
   const titleString = title ? `${title} | ${defaultName}` : defaultName;
-  const addPostsStyles =
+  const addPostStyling =
     identifier === PageType.Post || identifier === PageType.Posts;
 
   return (
@@ -67,7 +67,7 @@ const Layout: React.FC<LayoutProps> = ({ children, metaData }: LayoutProps) => {
 
       <Navigation active={identifier} />
 
-      <main className={addPostsStyles ? styles.mainPosts : styles.main}>
+      <main className={addPostStyling ? styles.mainPosts : styles.main}>
         {children}
       </main>
 
