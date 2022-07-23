@@ -23,4 +23,5 @@
 
 .navigation .active {
   text-decoration: line-through;
+  color: var(--c-typo-a-hover);
 }
