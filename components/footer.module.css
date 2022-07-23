@@ -1,0 +1,20 @@
+.footer {
+  background: radial-gradient(var(--c-comp-b), var(--c-comp-c));
+}
+
+.footer p {
+  font-size: 0.8rem;
+}
+
+.footer a:hover {
+  color: var(--c-typo);
+}
+
+.footer > div {
+  margin: 0 auto;
+  max-width: var(--max-width-l);
+}
+
+.footer > div > div {
+  padding: 3rem 1rem;
+}

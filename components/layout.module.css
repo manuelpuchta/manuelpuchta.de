@@ -1,0 +1,9 @@
+.main {
+  margin: 0 auto;
+  max-width: var(--max-width-l);
+}
+
+.mainPosts {
+  margin: 0 auto;
+  max-width: var(--max-width);
+}

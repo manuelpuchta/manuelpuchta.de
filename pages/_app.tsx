@@ -10,10 +10,12 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
     const handleRouteChange = (url: string) => {
       if (!window.goatcounter) return;
 
-      window.goatcounter.count({
-        path: url,
-        event: false,
-      });
+      if (window.goatcounter.count) {
+        window.goatcounter.count({
+          path: url,
+          event: false,
+        });
+      }
     };
 
     router.events.on('routeChangeComplete', handleRouteChange);

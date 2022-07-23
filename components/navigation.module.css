@@ -1,0 +1,27 @@
+.navigation {
+  margin: 0 auto;
+  max-width: var(--max-width-l);
+}
+
+.navigation ul {
+  display: inline-flex;
+  margin: 1rem;
+  padding: 0;
+  list-style: none;
+  border: var(--border-size) solid var(--c-comp-c);
+}
+
+.navigation li {
+  margin: 0 0.5rem;
+}
+
+.navigation a {
+  display: flex;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.navigation .active {
+  text-decoration: line-through;
+  color: var(--c-typo-a-hover);
+}

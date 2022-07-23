@@ -1,10 +1,11 @@
 import React from 'react';
 import { GetStaticProps, GetStaticPaths } from 'next';
 
+import { PageType } from '..';
+import { getAllPostIds, getPostData } from '../../lib/posts';
 import Layout from '../../components/layout';
 import Date from '../../components/date';
-import { getAllPostIds, getPostData } from '../../lib/posts';
-import { PageType } from '..';
+import styles from './[id].module.css';
 
 const Post: React.FC<Post> = ({
   title,
@@ -15,13 +16,13 @@ const Post: React.FC<Post> = ({
 }: Post) => (
   <Layout
     metaData={{
-      title: title,
       description: description,
-      identifier: PageType.Posts,
+      identifier: PageType.Post,
       published_time: published_time,
+      title: title,
     }}
   >
-    <article>
+    <article className={styles.post}>
       <Date dateString={date} />
       <h1>{title}</h1>
       <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
