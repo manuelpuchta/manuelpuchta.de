@@ -2,6 +2,10 @@
   background: radial-gradient(var(--c-comp-b), var(--c-comp-c));
 }
 
+.footer p {
+  font-size: 0.8rem;
+}
+
 .footer a:hover {
   color: var(--c-typo);
 }

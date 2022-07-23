@@ -33,16 +33,27 @@ const Footer: React.FC = () => {
             .
           </p>
           <p>
-            Hosted on{' '}
+            This website is built with{' '}
+            <a href="https://nextjs.org/" title="Next.js website">
+              Next.js
+            </a>{' '}
+            and hosted on{' '}
             <a
               href="https://uberspace.de"
               title="Uberspace hosting is awesome!"
             >
               Uberspace
             </a>
+            . Its source code is available on{' '}
+            <a
+              href="https://github.com/manuelpuchta/manuelpuchta.de"
+              title="Link to the GitHub repository of this site"
+            >
+              GitHub
+            </a>
             .
           </p>
-          <br />
+          <hr />
           <p>
             Back to{' '}
             <Link href="/">
