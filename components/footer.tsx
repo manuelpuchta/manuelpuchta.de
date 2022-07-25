@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
             . Its source code is available on{' '}
             <a
               href="https://github.com/manuelpuchta/manuelpuchta.de"
-              title="Link to the GitHub repository of this site"
+              title="Link to GitHub repository"
             >
               GitHub
             </a>
