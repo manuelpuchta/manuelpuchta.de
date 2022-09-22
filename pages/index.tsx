@@ -119,14 +119,6 @@ const Home: React.FC<HomeProps> = ({ allPostsData }: HomeProps) => (
                 LinkedIn
               </a>
             </li>
-            <li>
-              <a
-                href="https://twitter.com/manuelpuchta"
-                title="Follow me on Twitter."
-              >
-                Twitter
-              </a>
-            </li>
           </ul>
         </div>
       </div>
