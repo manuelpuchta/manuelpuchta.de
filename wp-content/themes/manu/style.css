@@ -946,3 +946,8 @@ textarea {
   margin-right: auto;
   margin-bottom: 1.5em;
 }
+
+/* Manu Custom CSS */
+.site > * + * {
+  margin-block-start: 1.5rem;
+}
