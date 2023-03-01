@@ -66,7 +66,7 @@ const Layout: React.FC<LayoutProps> = ({ children, metaData }: LayoutProps) => {
         {children}
       </main>
 
-      <Footer />
+      <Footer addBackToHomeLink={identifier !== PageType.Index} />
 
       <Script
         id="goatcounter"

@@ -3,7 +3,11 @@ import Link from 'next/link';
 
 import styles from './footer.module.css';
 
-const Footer: React.FC = () => {
+type FooterProps = {
+  addBackToHomeLink?: boolean;
+};
+
+const Footer: React.FC<FooterProps> = ({ addBackToHomeLink }: FooterProps) => {
   return (
     <footer className={`${styles.footer} inverted`}>
       <div>
@@ -11,9 +15,8 @@ const Footer: React.FC = () => {
           <h3>Just another &lt;footer /&gt;</h3>
           <p>
             This is a personal website, so you won&apos;t find any imprint page
-            here.
+            here. No cookies. 🍪
           </p>
-          <p>No cookies. 🍪</p>
           <p>
             {' '}
             I use GDPR-friendly{' '}
@@ -53,13 +56,15 @@ const Footer: React.FC = () => {
             </a>
             .
           </p>
-          <hr />
-          <p>
-            Back to{' '}
-            <Link href="/">
-              <a title="Go to Home page">Home</a>
-            </Link>
-          </p>
+
+          {addBackToHomeLink && (
+            <p>
+              Back to{' '}
+              <Link href="/">
+                <a title="Go to Home page">Home</a>
+              </Link>
+            </p>
+          )}
         </div>
       </div>
     </footer>
