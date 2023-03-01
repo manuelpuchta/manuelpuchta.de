@@ -1,4 +1,5 @@
 .footer {
+  text-align: center;
   background: radial-gradient(var(--c-comp-b), var(--c-comp-c));
 }
 
@@ -16,5 +17,5 @@
 }
 
 .footer > div > div {
-  padding: 3rem 1rem;
+  padding: 4rem 1rem 5rem;
 }
