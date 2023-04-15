@@ -49,6 +49,46 @@ const CV: React.FC = () => {
           <ul>
             <li>
               <h3>
+                Senior Software Developer (Frontend) @{' '}
+                <a
+                  href="https://dkbcodefactory.com/"
+                  title="DKB Code Factory website"
+                >
+                  DKB Code Factory
+                </a>
+              </h3>
+              <p>
+                <strong>(Now)</strong> Since Feb 2023 - remote from Hamburg
+                (Germany)
+              </p>
+              <p>
+                Team: Business customers (Geschäftskund*innen), trustee platform
+                (Verwalterplattform)
+              </p>
+              <p>
+                Web Engineering :: As part of a cross-functional team, I am
+                co-responsible for the development of a new web platform (Full
+                stack with Frontend focus).
+              </p>
+              <ul>
+                🧰{' '}
+                <cite>
+                  TypeScript, Nuxt 3, Tailwind, Vitest, Node.js, Headless CMS,
+                  GitLab CI/CD
+                </cite>
+              </ul>
+            </li>
+
+            <li>
+              <h3>Sabbatical 🌴</h3>
+              <p>
+                Lots of time on the bike, recharging batteries, finding a new
+                interesting job.
+              </p>
+            </li>
+
+            <li>
+              <h3>
                 Senior Web Developer @{' '}
                 <a href="https://www.tomorrow.one" title="Tomorrow website">
                   Tomorrow
