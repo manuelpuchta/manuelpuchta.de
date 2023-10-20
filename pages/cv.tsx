@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 import { PageType } from '.';
 import Layout from '../components/layout';
@@ -370,12 +369,6 @@ const CV: React.FC = () => {
         <section>
           <h2>Still here?</h2>
           <h3>Thank you.</h3>
-          <p>
-            CV as{' '}
-            <Link href="/cv/CV_Manuel-Puchta.pdf">
-              <a title="Download my CV">PDF</a>
-            </Link>
-          </p>
           <p>&rarr; {email}</p>
         </section>
       </div>
