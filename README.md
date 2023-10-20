@@ -17,6 +17,9 @@ HOST=HOST=http://localhost:3000
 # use correct node version
 nvm use
 
+# install dependencies once
+npm i
+
 # start dev server
 npm run dev
 
