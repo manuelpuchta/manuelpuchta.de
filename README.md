@@ -8,7 +8,7 @@
 Create `.env.local` file and add the following variables:
 
 ```sh
-HOST=HOST=http://localhost:3000
+HOST=http://localhost:3000
 ```
 
 ## Development
