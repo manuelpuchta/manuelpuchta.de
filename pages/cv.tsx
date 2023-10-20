@@ -16,6 +16,7 @@ const CV: React.FC = () => {
       metaData={{
         identifier: PageType.Cv,
         title: 'CV',
+        description: 'Here you can see what I do (did) for a living (so far).',
       }}
     >
       <div className={styles.cv}>
