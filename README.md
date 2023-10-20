@@ -8,7 +8,7 @@
 Create `.env.local` file and add the following variables:
 
 ```sh
-HOST=HOST=http://localhost:3000
+HOST=http://localhost:3000
 ```
 
 ## Development
@@ -16,6 +16,9 @@ HOST=HOST=http://localhost:3000
 ```sh
 # use correct node version
 nvm use
+
+# install dependencies once
+npm i
 
 # start dev server
 npm run dev

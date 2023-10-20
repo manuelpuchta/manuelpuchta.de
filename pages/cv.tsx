@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 import { PageType } from '.';
 import Layout from '../components/layout';
@@ -17,6 +16,7 @@ const CV: React.FC = () => {
       metaData={{
         identifier: PageType.Cv,
         title: 'CV',
+        description: 'Here you can see what I do (did) for a living (so far).',
       }}
     >
       <div className={styles.cv}>
@@ -49,26 +49,38 @@ const CV: React.FC = () => {
           <ul>
             <li>
               <h3>
+                Senior Frontend Developer @{' '}
+                <a href="https://www.tk.de" title="Die Techniker">
+                  Die Techniker
+                </a>
+              </h3>
+              <p>
+                <strong>(Now)</strong> Since Sep 2023 - Hamburg (Germany)
+              </p>
+            </li>
+
+            <li>
+              <h3>
                 Senior Software Developer (Frontend) @{' '}
                 <a
-                  href="https://dkbcodefactory.com/"
+                  href="https://dkbcodefactory.com"
                   title="DKB Code Factory website"
                 >
                   DKB Code Factory
                 </a>
               </h3>
               <p>
-                <strong>(Now)</strong> Since Feb 2023 - remote from Hamburg
-                (Germany)
+                <strong>(~0.5 years)</strong> Feb 2023 - Jul 2023, remote from
+                Hamburg (Germany)
               </p>
               <p>
                 Team: Business customers (Geschäftskund*innen), trustee platform
                 (Verwalterplattform)
               </p>
               <p>
-                Web Engineering :: As part of a cross-functional team, I am
-                co-responsible for the development of a new web platform (Full
-                stack with Frontend focus).
+                Web Engineering :: I was co-responsible for the development of a
+                new web platform (Full stack with Frontend focus) in a
+                cross-functional team.
               </p>
               <ul>
                 🧰{' '}
@@ -101,7 +113,7 @@ const CV: React.FC = () => {
               <p>Teams: Customer Relationship and Growth</p>
               <p>
                 Web Engineering :: I planned and established a future proof web
-                tech stack from scratch
+                tech stack from scratch.
               </p>
               <ul>
                 <li>
@@ -370,12 +382,6 @@ const CV: React.FC = () => {
         <section>
           <h2>Still here?</h2>
           <h3>Thank you.</h3>
-          <p>
-            CV as{' '}
-            <Link href="/cv/CV_Manuel-Puchta.pdf">
-              <a title="Download my CV">PDF</a>
-            </Link>
-          </p>
           <p>&rarr; {email}</p>
         </section>
       </div>

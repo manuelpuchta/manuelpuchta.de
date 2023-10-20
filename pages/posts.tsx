@@ -17,6 +17,8 @@ const Posts: React.FC<PostsProps> = ({ allPostsData }: PostsProps) => (
     metaData={{
       identifier: PageType.Posts,
       title: 'Posts',
+      description:
+        'My digital notebook (fails, learnings, good memories and pictures?).',
     }}
   >
     <section className={styles.posts}>
