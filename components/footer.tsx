@@ -60,8 +60,8 @@ const Footer: React.FC<FooterProps> = ({ addBackToHomeLink }: FooterProps) => {
           {addBackToHomeLink && (
             <p>
               Back to{' '}
-              <Link href="/">
-                <a title="Go to Home page">Home</a>
+              <Link href="/" title="Go to Home page">
+                Home
               </Link>
             </p>
           )}

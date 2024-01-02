@@ -27,9 +27,7 @@ const Posts: React.FC<PostsProps> = ({ allPostsData }: PostsProps) => (
         {allPostsData.map(({ id, date, title }) => (
           <li key={id} className="post">
             <h3>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
+              <Link href={`/posts/${id}`}>{title}</Link>
             </h3>
             <small>
               <Date dateString={date} />

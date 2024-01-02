@@ -45,10 +45,11 @@ const Home: React.FC<HomeProps> = ({ allPostsData }: HomeProps) => (
           <h2>Hello!</h2>
           <h2>
             I&apos;m Manuel, a{' '}
-            <Link href="/cv/">
-              <a title="Interested in my work experience? Have a look at my CV!">
-                web developer
-              </a>
+            <Link
+              href="/cv/"
+              title="Interested in my work experience? Have a look at my CV!"
+            >
+              web developer
             </Link>{' '}
             from Hamburg.
           </h2>
@@ -67,8 +68,11 @@ const Home: React.FC<HomeProps> = ({ allPostsData }: HomeProps) => (
             {allPostsData.map(({ id, date, title }) => (
               <li key={id} className="post">
                 <h3>
-                  <Link href={`/posts/${id}`}>
-                    <a title={`Open post with title: ${title}`}>{title}</a>
+                  <Link
+                    href={`/posts/${id}`}
+                    title={`Open post with title: ${title}`}
+                  >
+                    {title}
                   </Link>
                 </h3>
                 <small>
