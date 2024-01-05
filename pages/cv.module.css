@@ -1,11 +1,5 @@
 .cv {
-  margin: 3rem 1rem 7rem;
-}
-
-@media (min-width: 64rem) {
-  .cv {
-    margin: 7rem 1rem;
-  }
+  margin: 0 1rem;
 }
 
 .cv header {

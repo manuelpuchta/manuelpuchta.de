@@ -1,6 +1,9 @@
 .navigation {
   margin: 0 auto;
   max-width: var(--max-width-l);
+  font-family: var(--font-system);
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 .navigation ul {
@@ -22,6 +25,5 @@
 }
 
 .navigation .active {
-  text-decoration: line-through;
   color: var(--c-typo-a-hover);
 }

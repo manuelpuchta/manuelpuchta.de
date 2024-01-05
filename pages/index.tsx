@@ -34,8 +34,8 @@ const Home: React.FC<HomeProps> = ({ allPostsData }: HomeProps) => (
             loader={imageLoader}
             src={'images/portrait-500.jpg'}
             alt="A black and white portrait of Manuel Puchta, the author of this website"
-            width={300}
-            height={300}
+            width={280}
+            height={280}
           />
         </div>
       </div>
@@ -62,7 +62,7 @@ const Home: React.FC<HomeProps> = ({ allPostsData }: HomeProps) => (
       </div>
 
       <div>
-        <div className={`${styles.notes} inverted`}>
+        <div className="inverted">
           <h2>Notes</h2>
           <ul>
             {allPostsData.map(({ id, date, title }) => (
