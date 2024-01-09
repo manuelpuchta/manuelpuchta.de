@@ -1,21 +1,27 @@
 .footer {
-  text-align: center;
-  background: radial-gradient(var(--c-comp-b), var(--c-comp-c));
-}
-
-.footer p {
-  font-size: 0.8rem;
-}
-
-.footer a:hover {
-  color: var(--c-typo);
-}
-
-.footer > div {
-  margin: 0 auto;
+  margin: 1rem auto;
   max-width: var(--max-width-l);
 }
 
+@media print {
+  .footer {
+    display: none;
+  }
+}
+
+.footer > div {
+  margin: 1rem;
+  border: var(--border-size) solid var(--c-comp-c);
+}
+
 .footer > div > div {
-  padding: 4rem 1rem 5rem;
+  margin: 0 1rem;
+}
+
+.footer + nav {
+  margin-bottom: 5rem;
+}
+
+.footer:last-child {
+  margin-bottom: 5rem;
 }

@@ -18,6 +18,7 @@ const defaultDescription = 'Manuel Puchta is a web developer living in Hamburg';
 
 type LayoutProps = {
   children: React.ReactNode;
+  hasNavigation?: boolean;
   metaData: {
     description?: string;
     identifier?: PageType;
@@ -26,7 +27,11 @@ type LayoutProps = {
   };
 };
 
-const Layout: React.FC<LayoutProps> = ({ children, metaData }: LayoutProps) => {
+const Layout: React.FC<LayoutProps> = ({
+  children,
+  hasNavigation = true,
+  metaData,
+}: LayoutProps) => {
   const { asPath } = useRouter();
   const {
     description = defaultDescription,
@@ -35,8 +40,6 @@ const Layout: React.FC<LayoutProps> = ({ children, metaData }: LayoutProps) => {
     title,
   } = metaData;
   const titleString = title ? `${title} | ${defaultName}` : defaultName;
-  const addPostStyling =
-    identifier === PageType.Post || identifier === PageType.Posts;
 
   return (
     <>
@@ -60,13 +63,19 @@ const Layout: React.FC<LayoutProps> = ({ children, metaData }: LayoutProps) => {
         <link rel="icon" href="/icons/favicon.ico" />
       </Head>
 
-      <Navigation active={identifier} />
+      {hasNavigation && <Navigation active={identifier} />}
 
-      <main className={addPostStyling ? styles.mainPosts : styles.main}>
-        {children}
+      <main
+        className={`${styles.main} ${
+          !hasNavigation && styles.mainWithoutNavigation
+        }`}
+      >
+        <div>{children}</div>
       </main>
 
-      <Footer addBackToHomeLink={identifier !== PageType.Index} />
+      <Footer />
+
+      {hasNavigation && <Navigation active={identifier} />}
 
       <Script
         id="goatcounter"

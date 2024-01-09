@@ -3,11 +3,16 @@
   
   Mobile first thinking, the following media query
   breakpoints can be used:
-  - 1. breakpoint: 40rem (@see footer.module.css)
+  - 1. breakpoint: 40rem (@see index.module.css)
   - 2. breakpoint: 64rem (@see index.module.css)
 */
 
 html {
+  /* @see: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/ */
+  --font-system: -apple-system, BlinkMacSystemFont, “Segoe UI”, “Roboto”,
+    “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”,
+    sans-serif;
+
   --c-comp-a: #72ab92;
   --c-comp-b: #2c7857;
   --c-comp-c: #e276e2;
@@ -35,6 +40,12 @@ html {
 
 html {
   font-size: 120%;
+}
+
+@media print {
+  html {
+    font-size: 80%;
+  }
 }
 
 html,
@@ -67,10 +78,7 @@ h2,
 h3,
 h4,
 h5 {
-  /* @see: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/ */
-  font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, “Roboto”, “Oxygen”,
-    “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”,
-    sans-serif;
+  font-family: var(--font-system);
   line-height: 1.2;
 }
 

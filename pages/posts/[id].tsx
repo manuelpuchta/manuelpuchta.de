@@ -5,7 +5,6 @@ import { PageType } from '..';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Layout from '../../components/layout';
 import Date from '../../components/date';
-import styles from './[id].module.css';
 
 const Post: React.FC<Post> = ({
   title,
@@ -22,7 +21,7 @@ const Post: React.FC<Post> = ({
       title: title,
     }}
   >
-    <article className={styles.post}>
+    <article>
       <Date dateString={date} />
       <h1>{title}</h1>
       <div dangerouslySetInnerHTML={{ __html: contentHtml }} />

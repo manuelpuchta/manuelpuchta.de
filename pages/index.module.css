@@ -16,8 +16,16 @@
 @media (min-width: 40rem) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-    grid-auto-rows: minmax(12rem, auto);
+    grid-auto-rows: minmax(10rem, auto);
     grid-auto-flow: dense;
+    gap: 0;
+  }
+}
+
+@media (min-width: 64rem) {
+  .grid {
+    grid-auto-rows: minmax(12rem, auto);
+    gap: 1rem;
   }
 }
 
@@ -42,8 +50,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem;
-  margin: 1rem;
+  padding: 0 1rem;
+  margin: 0 1rem;
   border: var(--border-size) solid var(--c-comp-c);
 }
 
@@ -69,7 +77,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1rem;
+  margin: 0 1rem;
+}
+
+.grid > div:nth-child(3) > div {
+  padding: 0 1rem;
 }
 
 @media (min-width: 40rem) {
@@ -86,7 +98,6 @@
   align-self: center;
   grid-row-start: 7;
   grid-row-end: 9;
-  margin: 2rem 0 3rem;
 }
 
 @media (min-width: 40rem) {
@@ -94,7 +105,6 @@
     grid-row-start: 3;
     grid-row-end: 5;
     grid-column-start: 2;
-    margin: 0;
   }
 }
 
@@ -120,11 +130,6 @@
   .intro p {
     font-size: 1.25rem;
   }
-}
-
-/* layout div within third div.grid */
-.notes {
-  padding: 1rem;
 }
 
 /* layout div within fourth div.grid */

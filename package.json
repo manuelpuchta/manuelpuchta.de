@@ -16,13 +16,13 @@
     "lint": "eslint '*/**/*.{js,ts,tsx}'",
     "test": "echo \"Write tests!\"",
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start"
   },
   "dependencies": {
     "date-fns": "^2.29.1",
     "gray-matter": "^4.0.3",
-    "next": "^12.2.3",
+    "next": "^14.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "remark": "^14.0.2",

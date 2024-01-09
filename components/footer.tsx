@@ -7,19 +7,17 @@ type FooterProps = {
   addBackToHomeLink?: boolean;
 };
 
-const Footer: React.FC<FooterProps> = ({ addBackToHomeLink }: FooterProps) => {
+const Footer: React.FC<FooterProps> = ({
+  addBackToHomeLink = false,
+}: FooterProps) => {
   return (
-    <footer className={`${styles.footer} inverted`}>
+    <footer className={styles.footer}>
       <div>
         <div>
           <h3>Just another &lt;footer /&gt;</h3>
           <p>
             This is a personal website, so you won&apos;t find any imprint page
-            here. No cookies. 🍪
-          </p>
-          <p>
-            {' '}
-            I use GDPR-friendly{' '}
+            here. No cookies. 🍪 I use GDPR-friendly{' '}
             <a
               href="https://www.goatcounter.com/"
               title="GoatCounter is a great and easy web analytics tool without tracking of identifiable personal data, have a look!"
@@ -33,10 +31,7 @@ const Footer: React.FC<FooterProps> = ({ addBackToHomeLink }: FooterProps) => {
             >
               here
             </a>
-            .
-          </p>
-          <p>
-            This website is built with{' '}
+            . This website is built with{' '}
             <a href="https://nextjs.org/" title="Next.js website">
               Next.js
             </a>{' '}
@@ -60,8 +55,8 @@ const Footer: React.FC<FooterProps> = ({ addBackToHomeLink }: FooterProps) => {
           {addBackToHomeLink && (
             <p>
               Back to{' '}
-              <Link href="/">
-                <a title="Go to Home page">Home</a>
+              <Link href="/" title="Go to Home page">
+                Home
               </Link>
             </p>
           )}
