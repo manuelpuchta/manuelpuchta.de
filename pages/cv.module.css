@@ -21,17 +21,35 @@
 }
 
 .cv section {
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .cv h2 {
   border-bottom: 0.125rem solid var(--c-typo);
 }
 
+.cv h3 {
+  margin-bottom: 0.75rem;
+}
+
+.cv p {
+  margin: 0.5rem 0;
+}
+
 .cv ul li {
+  margin: 0.65rem 0;
+}
+
+ul.listHasMoreSpace li {
   margin: 1rem 0;
 }
 
 .work > ul > li {
-  margin: 2rem 0;
+  margin: 0.5rem 0;
+}
+
+@media print {
+  .hiddenForPrint {
+    display: none;
+  }
 }

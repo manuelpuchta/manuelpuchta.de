@@ -22,6 +22,7 @@ type HomeProps = {
 
 const Home: React.FC<HomeProps> = ({ allPostsData }: HomeProps) => (
   <Layout
+    hasNavigation={false}
     metaData={{
       identifier: PageType.Index,
       title: 'Hi 👋',

@@ -3,7 +3,7 @@
   
   Mobile first thinking, the following media query
   breakpoints can be used:
-  - 1. breakpoint: 40rem (@see footer.module.css)
+  - 1. breakpoint: 40rem (@see index.module.css)
   - 2. breakpoint: 64rem (@see index.module.css)
 */
 
@@ -40,6 +40,12 @@ html {
 
 html {
   font-size: 120%;
+}
+
+@media print {
+  html {
+    font-size: 80%;
+  }
 }
 
 html,

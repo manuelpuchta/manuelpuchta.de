@@ -7,7 +7,9 @@ type FooterProps = {
   addBackToHomeLink?: boolean;
 };
 
-const Footer: React.FC<FooterProps> = ({ addBackToHomeLink }: FooterProps) => {
+const Footer: React.FC<FooterProps> = ({
+  addBackToHomeLink = false,
+}: FooterProps) => {
   return (
     <footer className={styles.footer}>
       <div>

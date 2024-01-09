@@ -1,6 +1,12 @@
 .footer {
-  margin: 0 auto 5rem;
+  margin: 1rem auto;
   max-width: var(--max-width-l);
+}
+
+@media print {
+  .footer {
+    display: none;
+  }
 }
 
 .footer > div {
@@ -10,4 +16,12 @@
 
 .footer > div > div {
   margin: 0 1rem;
+}
+
+.footer + nav {
+  margin-bottom: 5rem;
+}
+
+.footer:last-child {
+  margin-bottom: 5rem;
 }

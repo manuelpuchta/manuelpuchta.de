@@ -21,7 +21,7 @@ const Navigation: React.FC<NavigationProps> = ({ active }: NavigationProps) => {
             Home{' '}
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link
             className={active === PageType.Posts ? `${styles.active}` : null}
             href="/posts/"
@@ -29,7 +29,7 @@ const Navigation: React.FC<NavigationProps> = ({ active }: NavigationProps) => {
           >
             Posts
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link
             className={active === PageType.Cv ? `${styles.active}` : null}
