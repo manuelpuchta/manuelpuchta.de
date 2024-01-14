@@ -248,7 +248,7 @@ const CV: React.FC = () => {
           <h2>Skills</h2>
           <ul>
             <li>
-              <strong>(Frontend) Web Engineering</strong> 9+ years of
+              <strong>(Frontend) Web Engineering</strong> 10+ years of
               experience, writing clean and maintainable code.
             </li>
 
