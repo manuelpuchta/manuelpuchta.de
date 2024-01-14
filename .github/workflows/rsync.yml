@@ -44,12 +44,11 @@ jobs:
         run: npm ci
       - name: Build Next.js
         run: npm run build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./out
+      - name: Prepare build folder to be uploaded
+        run: |
+          cp ${{ github.workspace }}/resources/.htaccess ${{ github.workspace }}/out
       - name: List build files
         run: |
           ls ${{ github.workspace }}/out
       - name: Rsync to Uberspace
-        run: rsync -avz --dry-run tsconfig.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/virtual/${{ secrets.UBERSPACE_USERNAME }}/html
+        run: rsync -avz --dry-run ${{ github.workspace }}/out/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/virtual/${{ secrets.UBERSPACE_USERNAME }}/html
