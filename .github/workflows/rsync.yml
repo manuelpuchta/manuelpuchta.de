@@ -51,4 +51,4 @@ jobs:
         run: |
           ls ${{ github.workspace }}/out
       - name: Rsync to Uberspace
-        run: rsync -avz --dry-run ${{ github.workspace }}/out/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/virtual/${{ secrets.UBERSPACE_USERNAME }}/html
+        run: rsync -avz ${{ github.workspace }}/out/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/virtual/${{ secrets.UBERSPACE_USERNAME }}/html
