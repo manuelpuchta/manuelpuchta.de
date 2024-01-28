@@ -37,6 +37,7 @@ const Home: React.FC<HomeProps> = ({ allPostsData }: HomeProps) => (
             alt="A black and white portrait of Manuel Puchta, the author of this website"
             width={280}
             height={280}
+            priority
           />
         </div>
       </div>
