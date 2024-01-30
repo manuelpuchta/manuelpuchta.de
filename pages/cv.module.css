@@ -25,10 +25,11 @@
 }
 
 .cv h2 {
-  border-bottom: 0.125rem solid var(--c-typo);
+  border-bottom: 0.1875rem solid var(--c-typo);
 }
 
 .cv h3 {
+  margin-top: 1.5rem;
   margin-bottom: 0.75rem;
 }
 
@@ -36,16 +37,8 @@
   margin: 0.5rem 0;
 }
 
-.cv ul li {
-  margin: 0.65rem 0;
-}
-
-ul.listHasMoreSpace li {
-  margin: 1rem 0;
-}
-
-.work > ul > li {
-  margin: 0.5rem 0;
+.cv ul {
+  margin-top: 0;
 }
 
 @media print {

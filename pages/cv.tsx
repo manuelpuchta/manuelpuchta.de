@@ -42,190 +42,179 @@ const CV: React.FC = () => {
         </section>
 
         <section className={styles.work}>
-          <h2>Work</h2>
+          <h2>Work experience</h2>
+
+          <h3>
+            Senior Frontend Developer @{' '}
+            <a href="https://www.tk.de">Die Techniker</a>
+          </h3>
+          <p>
+            <strong>(Now)</strong> Since Sep 2023 - Hamburg (Germany)
+          </p>
+          <p>
+            Team: Web Squad, working on <a href="https://www.tk.de">tk.de</a> in
+            a cross-functional team.
+          </p>
+
+          <h3>
+            Senior Software Developer (Frontend) @{' '}
+            <a href="https://dkbcodefactory.com">DKB Code Factory</a>
+          </h3>
+          <p>
+            <strong>(~0.5 years)</strong> Feb 2023 - Jul 2023, remote from
+            Hamburg (Germany)
+          </p>
+          <p>
+            Team: Business customers (Geschäftskund*innen), trustee platform
+            (Verwalterplattform)
+          </p>
+          <p>
+            <strong>Web Engineering:</strong> I was co-responsible for the
+            development of a new web platform (Full stack with Frontend focus)
+            in a cross-functional team.
+          </p>
+          <cite>
+            TypeScript, Vue 3, Nuxt 3, Tailwind, Design System, Vitest, Node.js,
+            GitLab CI/CD
+          </cite>
+
+          <h3>Sabbatical 🌴</h3>
+          <p>
+            Lots of time on the bike, recharging batteries, finding a new
+            interesting job.
+          </p>
+
+          <h3>
+            Senior Web Developer @{' '}
+            <a href="https://www.tomorrow.one">Tomorrow</a>
+          </h3>
+          <p>
+            <strong>(~2 years)</strong> Apr 2020 - Jun 2022, Hamburg (Germany)
+          </p>
+          <p>Teams: Customer Relationship and Growth</p>
+          <p>
+            <strong>Web Engineering:</strong> I planned and established a future
+            proof web tech stack from scratch.
+          </p>
           <ul>
             <li>
-              <h3>
-                Senior Frontend Developer @{' '}
-                <a href="https://www.tk.de">Die Techniker</a>
-              </h3>
-              <p>
-                <strong>(Now)</strong> Since Sep 2023 - Hamburg (Germany)
-              </p>
-              <p>
-                Team: Web Squad, working on{' '}
-                <a href="https://www.tk.de">tk.de</a> in a cross-functional
-                team.
-              </p>
+              <strong>
+                Relaunching <a href="https://www.tomorrow.one">tomorrow.one</a>
+              </strong>{' '}
+              marketing website, self-service pages and{' '}
+              <a href="https://get.tomorrow.one/en-EU/start/">sign up</a>.{' '}
+            </li>
+            <li>
+              100% enablement of Marketing and Product teams to create and
+              publish content and campaign pages independently.
+            </li>
+            <li>
+              To achieve scalability and maintainability I{' '}
+              <strong>introduced a design system</strong> which powers almost
+              all Tomorrow websites today (published as a private npm package to
+              a self hosted Nexus repository).
+            </li>
+            <li>
+              Created dockerized web frontend{' '}
+              <strong>deployments to Kubernetes</strong>.
+            </li>
+            <cite>
+              TypeScript, React, Redux, styled-components, Next.js, Storybook,
+              npm, Jest, Testing Library, Node.js, Headless CMS, Kubernetes,
+              docker, GitLab CI
+            </cite>
+          </ul>
+
+          <h3>
+            Senior Web Developer @ <a href="https://demodern.com">Demodern</a> -
+            Creative Technologies
+          </h3>
+          <p>
+            <strong>(~3 years)</strong> May 2017 - Mar 2020, Hamburg (Germany)
+          </p>
+          <p>
+            During my time at Demodern, I was part of a team that wanted to
+            develop the most intuitive, visual compelling and performant web{' '}
+            <a href="https://www.smart.com/de/de/modelle/eq-fortwo-coupe/konfigurator">
+              car configurator
+            </a>{' '}
+            to date. It was so much fun!
+          </p>
+          <ul className={(styles.listHasMoreSpace, styles.hiddenForPrint)}>
+            <li>
+              <strong>Web Engineering:</strong> 3D{' '}
+              <a href="https://www.smart.com/de/de/modelle/eq-fortwo-coupe/konfigurator">
+                car configurator
+              </a>{' '}
+              application for smart.{' '}
+              <a href="https://demodern.com/projects/smart-cc">
+                [more information]
+              </a>
+              <br />
+              <cite>
+                React, Redux, styled-components, webpack, Jest, Jenkins, PCF
+              </cite>
             </li>
 
             <li>
-              <h3>
-                Senior Software Developer (Frontend) @{' '}
-                <a href="https://dkbcodefactory.com">DKB Code Factory</a>
-              </h3>
-              <p>
-                <strong>(~0.5 years)</strong> Feb 2023 - Jul 2023, remote from
-                Hamburg (Germany)
-              </p>
-              <p>
-                Team: Business customers (Geschäftskund*innen), trustee platform
-                (Verwalterplattform)
-              </p>
-              <p>
-                <strong>Web Engineering</strong> :: I was co-responsible for the
-                development of a new web platform (Full stack with Frontend
-                focus) in a cross-functional team.
-              </p>
-              <ul>
-                🧰{' '}
-                <cite>
-                  TypeScript, Nuxt 3, Tailwind, Vitest, Node.js, Headless CMS,
-                  GitLab CI/CD
-                </cite>
-              </ul>
+              <strong>Web Engineering:</strong> Automotive retail experience for
+              smart.{' '}
+              <a href="https://demodern.com/projects/smart-cities-retail-experience">
+                [more information]
+              </a>
+              <br />
+              <cite>React, Redux, SCSS, webpack</cite>
+            </li>
+          </ul>
+
+          <h3>
+            (Junior) Web Developer @{' '}
+            <a href="https://www.jvm.com">Jung von Matt</a>
+          </h3>
+          <p>
+            <strong>(~5 years)</strong> Feb 2012 - Apr 2017, Hamburg (Germany)
+          </p>
+          <p>
+            I learned a lot during my time at Jung von Matt. Thanks to great
+            colleagues and projects, I gained exceptional skills in responsive
+            (mobile first) web development and was able to get to know a wide
+            variety of tech stacks, always tailored to the respective client
+            requirements.
+          </p>
+          <ul className={(styles.listHasMoreSpace, styles.hiddenForPrint)}>
+            <li>
+              <strong>Web Development:</strong> Campaign platform with several
+              specials to support the Elbphilharmonie hall opening, project was
+              called &quot;
+              <a href="https://www.elbphilharmonie.de/en/mediatheque/next-door#!/">
+                Countdown Elbphilharmonie
+              </a>
+              &quot;.{' '}
+              <a href="https://www.jvm.com/en/cases/elbphilharmonie-grand-opening/">
+                [more information]
+              </a>
+              <br />
+              <cite>Django, AngularJS v1, SCSS with BEM</cite>
             </li>
 
             <li>
-              <h3>Sabbatical 🌴</h3>
-              <p>
-                Lots of time on the bike, recharging batteries, finding a new
-                interesting job.
-              </p>
+              <strong>Frontend Development:</strong> BMW VISION NEXT 100
+              special, a full screen video-like web application that allowed
+              users to discover BMWs vision car interactively (custom Vanilla JS
+              MVC application).{' '}
+              <a href="https://www.jvm.com/de/cases/bmw-100/">
+                [more information]
+              </a>
+              <br />
+              <cite>Vanilla JS, SCSS</cite>
             </li>
 
             <li>
-              <h3>
-                Senior Web Developer @{' '}
-                <a href="https://www.tomorrow.one">Tomorrow</a>
-              </h3>
-              <p>
-                <strong>(~2 years)</strong> Apr 2020 - Jun 2022, Hamburg
-                (Germany)
-              </p>
-              <p>Teams: Customer Relationship and Growth</p>
-              <p>
-                <strong>Web Engineering</strong> :: I planned and established a
-                future proof web tech stack from scratch.
-              </p>
-              <ul>
-                <li>
-                  <strong>
-                    Relaunching{' '}
-                    <a href="https://www.tomorrow.one">tomorrow.one</a>
-                  </strong>{' '}
-                  marketing website, self-service pages and{' '}
-                  <a href="https://get.tomorrow.one/en-EU/start/">sign up</a>.{' '}
-                </li>
-                <li>
-                  To achieve scalability and maintainability I{' '}
-                  <strong>introduced a design system</strong> which powers
-                  almost all Tomorrow websites today (published as a private npm
-                  package to a self hosted Nexus repository).
-                </li>
-                <li>
-                  Created dockerized web frontend{' '}
-                  <strong>deployments to Kubernetes</strong>.
-                </li>
-                🧰{' '}
-                <cite>
-                  TypeScript, React, Redux, styled-components, Next.js,
-                  Storybook, npm, Jest, Testing Library, Node.js, Headless CMS,
-                  Kubernetes, docker, GitLab CI
-                </cite>
-              </ul>
-            </li>
-
-            <li>
-              <h3>
-                Senior Web Developer @{' '}
-                <a href="https://demodern.com">Demodern</a> - Creative
-                Technologies
-              </h3>
-              <p>
-                <strong>(~3 years)</strong> May 2017 - Mar 2020, Hamburg
-                (Germany)
-              </p>
-              <ul className={(styles.listHasMoreSpace, styles.hiddenForPrint)}>
-                <li>
-                  2019 <strong>Web Engineering</strong> :: As part of a three to
-                  seven-person development team we created a 3D{' '}
-                  <a href="https://www.smart.com/de/de/modelle/eq-fortwo-coupe/konfigurator">
-                    car configurator
-                  </a>{' '}
-                  application for smart.{' '}
-                  <a href="https://demodern.com/projects/smart-cc">
-                    [more information]
-                  </a>
-                  <br />
-                  🧰{' '}
-                  <cite>
-                    React, Redux, styled-components, webpack, Jest, Jenkins, PCF
-                  </cite>
-                </li>
-
-                <li>
-                  2018 <strong>Web Engineering</strong> :: As part of a two to
-                  five-person development team we created an automotive retail
-                  experience for smart.{' '}
-                  <a href="https://demodern.com/projects/smart-cities-retail-experience">
-                    [more information]
-                  </a>
-                  <br />
-                  🧰 <cite>React, Redux, SCSS, webpack</cite>
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <h3>
-                (Junior) Web Developer @{' '}
-                <a href="https://www.jvm.com">Jung von Matt</a>
-              </h3>
-              <p>
-                <strong>(~5 years)</strong> Feb 2012 - Apr 2017, Hamburg
-                (Germany)
-              </p>
-              <ul className={(styles.listHasMoreSpace, styles.hiddenForPrint)}>
-                <li>
-                  2017 <strong>Web Development</strong> :: As part of a three to
-                  five-person development team we developed a campaign platform
-                  with several specials to support the Elbphilharmonie hall
-                  opening, project was called &quot;
-                  <a href="https://www.elbphilharmonie.de/en/mediatheque/next-door#!/">
-                    Countdown Elbphilharmonie
-                  </a>
-                  &quot;.{' '}
-                  <a href="https://www.jvm.com/en/cases/elbphilharmonie-grand-opening/">
-                    [more information]
-                  </a>
-                  <br />
-                  🧰 <cite>Django, AngularJS v1, SCSS with BEM</cite>
-                </li>
-
-                <li>
-                  2016 <strong>Frontend Development</strong> :: As part of a
-                  four-person development team we developed a full screen
-                  video-like web application that allowed users to discover BMWs
-                  vision car interactively (custom Vanilla JS MVC application),
-                  called BMW VISION NEXT 100 special.{' '}
-                  <a href="https://www.jvm.com/de/cases/bmw-100/">
-                    [more information]
-                  </a>
-                  <br />
-                  🧰 <cite>Vanilla JS, SCSS</cite>
-                </li>
-
-                <li>
-                  2015 <strong>Frontend Development</strong> :: As part of a
-                  five-person development team we developed a campaign platform
-                  (Django framework based) named &quot;
-                  <a href="https://kampagne.dfb.de">DFB Ehrenrunde</a>
-                  &quot;.
-                  <br />
-                  🧰 <cite>AngularJS v1, Less</cite>
-                </li>
-              </ul>
+              <strong>Frontend Development:</strong> &quot;
+              <a href="https://kampagne.dfb.de">DFB Ehrenrunde</a>
+              &quot; campaign platform (Django framework based).
+              <br />
+              <cite>AngularJS v1, Less</cite>
             </li>
           </ul>
         </section>
@@ -234,12 +223,13 @@ const CV: React.FC = () => {
           <h2>Studies</h2>
           <ul>
             <li>
-              2012 <strong>Media Informatics, Bachelor of Science</strong>{' '}
-              (B.Sc.),{' '}
+              <strong>Media Informatics, Bachelor of Science</strong> (B.Sc.),{' '}
               <a href="https://www.hof-university.com">
                 University of Applied Sciences Hof
               </a>
-              , Germany
+              , Germany.
+              <br />
+              <strong>2007 - 2012</strong>
             </li>
           </ul>
         </section>
