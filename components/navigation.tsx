@@ -16,7 +16,6 @@ const Navigation: React.FC<NavigationProps> = ({ active }: NavigationProps) => {
           <Link
             className={active === PageType.Index ? `${styles.active}` : null}
             href="/"
-            title="Go to Home page"
           >
             Home{' '}
           </Link>
@@ -25,7 +24,6 @@ const Navigation: React.FC<NavigationProps> = ({ active }: NavigationProps) => {
           <Link
             className={active === PageType.Posts ? `${styles.active}` : null}
             href="/posts/"
-            title="Go to Posts overview page"
           >
             Posts
           </Link>
@@ -34,7 +32,6 @@ const Navigation: React.FC<NavigationProps> = ({ active }: NavigationProps) => {
           <Link
             className={active === PageType.Cv ? `${styles.active}` : null}
             href="/cv/"
-            title="Go to CV page"
           >
             CV
           </Link>
