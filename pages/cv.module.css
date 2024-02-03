@@ -42,6 +42,23 @@
 }
 
 @media print {
+  .cv section {
+    margin: 1rem 0;
+  }
+
+  .cv h2 {
+    font-size: 1rem;
+  }
+
+  .cv h3 {
+    margin-top: 0.8rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .cv ul li {
+    margin: 0.1rem 0;
+  }
+
   .hiddenForPrint {
     display: none;
   }

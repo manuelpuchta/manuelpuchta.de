@@ -34,10 +34,11 @@ const CV: React.FC = () => {
         <section>
           <p>
             <strong>I&apos;m a Web Engineer.</strong> What I love to do:
-            Building easy-to-use interfaces that put a smile on the face of
-            people using them. Ensuring that everything scales well by designing
-            and implementing the underlying architecture. Shipping frequently to
-            live. Making a product better. Working in a team.
+            Building easy-to-use, responsive and accessible interfaces that put
+            a smile on the face of people using them. Ensuring that everything
+            scales well by designing and implementing the underlying
+            architecture. Shipping frequently to live. Making a product better.
+            Working in a team.
           </p>
         </section>
 
@@ -51,10 +52,32 @@ const CV: React.FC = () => {
           <p>
             <strong>(Now)</strong> Since Sep 2023 - Hamburg (Germany)
           </p>
+          <p>Team: Web Squad</p>
           <p>
-            Team: Web Squad, working on <a href="https://www.tk.de">tk.de</a> in
-            a cross-functional team.
+            <strong>Web Engineering:</strong> Working on{' '}
+            <a href="https://www.tk.de">tk.de</a>.
           </p>
+          <ul>
+            <li>
+              Collaborating within a cross-functional team, I contribute to the
+              gradual redesign of a complex frontend user interface, ensuring
+              adherence to accessibility best practices (
+              <a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a>).
+            </li>
+            <li>
+              Within community of practices, I proactively help to maintain and
+              update internal frameworks/component systems, for example to
+              ensure seamless compatibility with latest Node.js LTS versions.
+            </li>
+            <li>
+              Prototyping and evaluating a new frontend tech stack
+              (transitioning towards the adoption of Web Components).
+            </li>
+            <cite>
+              TypeScript, Vanilla JS, React, HTML5, CSS3, SCSS, FreeMarker,
+              GitHub
+            </cite>
+          </ul>
 
           <h3>
             Senior Software Developer (Frontend) @{' '}
@@ -64,19 +87,27 @@ const CV: React.FC = () => {
             <strong>(~0.5 years)</strong> Feb 2023 - Jul 2023, remote from
             Hamburg (Germany)
           </p>
-          <p>
-            Team: Business customers (Geschäftskund*innen), trustee platform
-            (Verwalterplattform)
-          </p>
+          <p>Team: Business customers (trustee platform)</p>
           <p>
             <strong>Web Engineering:</strong> I was co-responsible for the
             development of a new web platform (Full stack with Frontend focus)
             in a cross-functional team.
           </p>
-          <cite>
-            TypeScript, Vue 3, Nuxt 3, Tailwind, Design System, Vitest, Node.js,
-            GitLab CI/CD
-          </cite>
+          <ul>
+            <li>
+              In close collaboration with UX I initiated an MVP using Nuxt 3 to
+              address a crucial business requirement associated with BaFin
+              regulations.
+            </li>
+            <li>
+              Empowered our team to actively contribute to the internal Design
+              Systems (Vue 2 and 3).
+            </li>
+            <cite>
+              TypeScript, Vue 3, Nuxt 3, Tailwind, Design System, Vitest,
+              Node.js, GitLab CI/CD
+            </cite>
+          </ul>
 
           <h3>Sabbatical 🌴</h3>
           <p>
@@ -98,25 +129,28 @@ const CV: React.FC = () => {
           </p>
           <ul>
             <li>
-              <strong>
-                Relaunching <a href="https://www.tomorrow.one">tomorrow.one</a>
-              </strong>{' '}
+              Re-creation of <a href="https://www.tomorrow.one">tomorrow.one</a>{' '}
               marketing website, self-service pages and{' '}
-              <a href="https://get.tomorrow.one/en-EU/start/">sign up</a>.{' '}
+              <a href="https://get.tomorrow.one/en-EU/start/">sign-up</a>{' '}
+              process by implementing performant Next.js frontend solutions,
+              coupled with a streamlined asset management for enhanced
+              efficiency.
             </li>
             <li>
-              100% enablement of Marketing and Product teams to create and
-              publish content and campaign pages independently.
+              Implemented a headless CMS (RESTful API), empowering marketing and
+              product teams to achieve complete independence in creating and
+              publishing content, along with campaign pages.
             </li>
             <li>
-              To achieve scalability and maintainability I{' '}
-              <strong>introduced a design system</strong> which powers almost
-              all Tomorrow websites today (published as a private npm package to
-              a self hosted Nexus repository).
+              To ensure scalability and maintenance, I collaborated with UX/UI
+              designers to implement a design system from scratch that serves as
+              the foundation for nearly all Tomorrow websites today (published
+              as a private npm package to a self hosted Nexus repository).
             </li>
             <li>
-              Created dockerized web frontend{' '}
-              <strong>deployments to Kubernetes</strong>.
+              Created dockerized web frontend deployments to Kubernetes with
+              GitLab CI/CD pipelines (custom build, test, and deployment
+              processes).
             </li>
             <cite>
               TypeScript, React, Redux, styled-components, Next.js, Storybook,
@@ -284,7 +318,7 @@ const CV: React.FC = () => {
           </ul>
         </section>
 
-        <section>
+        <section className={styles.hiddenForPrint}>
           <h2>Other Projects</h2>
           <ul>
             <li>
