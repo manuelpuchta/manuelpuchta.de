@@ -67,11 +67,11 @@ const CV: React.FC = () => {
             <li>
               Within community of practices, I proactively help to maintain and
               update internal frameworks/component systems, for example to
-              ensure seamless compatibility with latest Node.js LTS versions.
+              ensure security through Node.js LTS version updates.
             </li>
             <li>
-              Prototyping and evaluating a new frontend tech stack
-              (transitioning towards the adoption of Web Components).
+              Prototyping/evaluating of a performant and reliabile new frontend
+              tech stack.
             </li>
             <cite>
               TypeScript, Vanilla JS, React, HTML5, CSS3, SCSS, FreeMarker,
@@ -90,7 +90,7 @@ const CV: React.FC = () => {
           <p>Team: Business customers (trustee platform)</p>
           <p>
             <strong>Web Engineering:</strong> I was co-responsible for the
-            development of a new web platform (Full stack with Frontend focus)
+            development of a new web platform (Full stack with frontend focus)
             in a cross-functional team.
           </p>
           <ul>
@@ -148,9 +148,9 @@ const CV: React.FC = () => {
               as a private npm package to a self hosted Nexus repository).
             </li>
             <li>
-              Created dockerized web frontend deployments to Kubernetes with
-              GitLab CI/CD pipelines (custom build, test, and deployment
-              processes).
+              Stretched myself, teaching myself Kubernetes, Skaffold and GitLab
+              CI/CD pipelines configuration to create dockerized web frontends
+              (custom build, test and deployment processes).
             </li>
             <cite>
               TypeScript, React, Redux, styled-components, Next.js, Storybook,
@@ -277,6 +277,14 @@ const CV: React.FC = () => {
             </li>
 
             <li>
+              <strong>Technical Lead</strong> Software architecture, code
+              review, communication, mentoring - I&apos;m always happy and
+              curious to improve and reflect current workflows within the team
+              and company in a collaborative way. I&apos;m a fan of flat
+              hierarchies, transparency, self-management and empowerment.
+            </li>
+
+            <li>
               <strong>UX/UI Development</strong> I love to create easy-to-use
               interfaces and to work closely with the UX/UI Designers to create
               the best user journey.
@@ -292,14 +300,6 @@ const CV: React.FC = () => {
               stakeholder, client and service provider communication; my
               favourite agile process frameworks are Scrum and Kanban (with
               periodically team retrospectives).
-            </li>
-
-            <li>
-              <strong>Technical Lead</strong> Software architecture, code
-              review, communication, mentoring - I&apos;m always happy and
-              curious to improve and reflect current workflows within the team
-              and company in a collaborative way. I&apos;m a fan of flat
-              hierarchies, transparency, self-management and empowerment.
             </li>
 
             <li>
