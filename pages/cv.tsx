@@ -173,9 +173,8 @@ const CV: React.FC = () => {
             <a href="https://www.smart.com/de/de/modelle/eq-fortwo-coupe/konfigurator">
               car configurator
             </a>{' '}
-            to date. During my time there, I played a key role in the front-end
-            architecture and was a mentor for up to three developers. It was so
-            much fun!
+            to date. I played a key role in the front-end architecture and was a
+            mentor for up to three developers. It was so much fun!
           </p>
           <ul className={(styles.listHasMoreSpace, styles.hiddenForPrint)}>
             <li>
