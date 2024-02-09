@@ -125,7 +125,8 @@ const CV: React.FC = () => {
           <p>Teams: Customer Relationship and Growth</p>
           <p>
             <strong>Web Engineering:</strong> I planned and established a future
-            proof web tech stack from scratch.
+            proof web tech stack from scratch and did cross-team alignments and
+            stakeholder communications.
           </p>
           <ul>
             <li>
