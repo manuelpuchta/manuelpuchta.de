@@ -125,7 +125,8 @@ const CV: React.FC = () => {
           <p>Teams: Customer Relationship and Growth</p>
           <p>
             <strong>Web Engineering:</strong> I planned and established a future
-            proof web tech stack from scratch.
+            proof web tech stack from scratch and did cross-team alignments and
+            stakeholder communications.
           </p>
           <ul>
             <li>
@@ -172,7 +173,9 @@ const CV: React.FC = () => {
             <a href="https://www.smart.com/de/de/modelle/eq-fortwo-coupe/konfigurator">
               car configurator
             </a>{' '}
-            to date. It was so much fun!
+            to date. During my time there, I played a key role in the front-end
+            architecture and was a mentor for up to three developers. It was so
+            much fun!
           </p>
           <ul className={(styles.listHasMoreSpace, styles.hiddenForPrint)}>
             <li>
