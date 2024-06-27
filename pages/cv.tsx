@@ -50,7 +50,7 @@ const CV: React.FC = () => {
             <a href="https://www.tk.de">Die Techniker</a>
           </h3>
           <p>
-            <strong>(Now)</strong> Since Sep 2023 - Hamburg (Germany)
+            <strong>(~1 year)</strong> Sep 2023 - Jun 2024, Hamburg (Germany)
           </p>
           <p>Team: Web Squad</p>
           <p>
@@ -84,7 +84,7 @@ const CV: React.FC = () => {
             <a href="https://dkbcodefactory.com">DKB Code Factory</a>
           </h3>
           <p>
-            <strong>(~0.5 years)</strong> Feb 2023 - Jul 2023, remote from
+            <strong>(~0.5 year)</strong> Feb 2023 - Jul 2023, remote from
             Hamburg (Germany)
           </p>
           <p>Team: Business customers (trustee platform)</p>
