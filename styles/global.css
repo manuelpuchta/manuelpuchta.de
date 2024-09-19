@@ -17,6 +17,8 @@ html {
   --c-comp-b: #2c7857;
   --c-comp-c: #e276e2;
 
+  --c-divider: #0000001a;
+
   --c-signal-a: var(--c-comp-b);
   --c-signal-b: var(--c-comp-c);
 

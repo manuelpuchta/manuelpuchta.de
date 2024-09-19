@@ -31,6 +31,13 @@
 .cv h3 {
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--c-divider);
+}
+
+.cv h3:first-of-type {
+  padding-top: 0;
+  border-top: none;
 }
 
 .cv p {
