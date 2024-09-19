@@ -50,7 +50,7 @@ const CV: React.FC = () => {
             <a href="https://digitalservice.bund.de/">DigitalService</a>
           </h3>
           <p>
-            <strong>(Now)</strong> Since Sep 2024 - Berlin (Germany)
+            <strong>(Now)</strong> Since Sep 2024, Berlin (Germany)
           </p>
 
           <h3>
