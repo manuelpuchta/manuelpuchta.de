@@ -46,28 +46,37 @@ const CV: React.FC = () => {
           <h2>Work experience</h2>
 
           <h3>
+            Senior Software Engineer @{' '}
+            <a href="https://digitalservice.bund.de/">DigitalService</a>
+          </h3>
+          <p>
+            <strong>(Now)</strong> Since Sep 2024 - Berlin (Germany)
+          </p>
+
+          <h3>
             Senior Frontend Developer @{' '}
             <a href="https://www.tk.de">Die Techniker</a>
           </h3>
           <p>
-            <strong>(~1 year)</strong> Sep 2023 - Jun 2024, Hamburg (Germany)
+            <strong>(~0.75 years)</strong> Sep 2023 - Jun 2024, Hamburg
+            (Germany)
           </p>
           <p>Team: Web Squad</p>
           <p>
-            <strong>Web Engineering:</strong> Working on{' '}
+            <strong>Web Engineering:</strong> Worked on{' '}
             <a href="https://www.tk.de">tk.de</a>.
           </p>
           <ul>
             <li>
-              Collaborating within a cross-functional team, I contribute to the
-              gradual redesign of a complex frontend user interface, ensuring
-              adherence to accessibility best practices (
+              As part of a cross-functional team, I contributed to the gradual
+              redesign of a complex frontend user interface, ensuring adherence
+              to accessibility best practices (
               <a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a>).
             </li>
             <li>
-              Within community of practices, I proactively help to maintain and
-              update internal frameworks/component systems, for example to
-              ensure security through Node.js LTS version updates.
+              Within community of practices, I proactively helped to maintain
+              and update internal frameworks/component systems. For example:
+              Ensuring security through Node.js LTS version updates.
             </li>
             <li>
               Prototyping/evaluating of a performant and reliabile new frontend
@@ -84,7 +93,7 @@ const CV: React.FC = () => {
             <a href="https://dkbcodefactory.com">DKB Code Factory</a>
           </h3>
           <p>
-            <strong>(~0.5 year)</strong> Feb 2023 - Jul 2023, remote from
+            <strong>(~0.5 years)</strong> Feb 2023 - Jul 2023, remote from
             Hamburg (Germany)
           </p>
           <p>Team: Business customers (trustee platform)</p>
