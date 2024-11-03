@@ -14,7 +14,7 @@ const {
 } = getConfig();
 
 const defaultName = 'Manuel Puchta';
-const defaultDescription = 'Manuel Puchta is a web developer living in Hamburg';
+const defaultDescription = 'Manuel Puchta is a web developer living in Berlin';
 
 type LayoutProps = {
   children: React.ReactNode;
