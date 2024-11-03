@@ -23,7 +23,7 @@ const CV: React.FC = () => {
         <header>
           <h1>Manuel Puchta</h1>
           <aside>
-            <p>Hamburg, Germany</p>
+            <p>Berlin, Germany</p>
             <p>Mail: {email}</p>
             <p>
               Web: <a href="https://manuelpuchta.de">https://manuelpuchta.de</a>

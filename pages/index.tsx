@@ -46,8 +46,8 @@ const Home: React.FC<HomeProps> = ({ allPostsData }: HomeProps) => (
         <div className={styles.intro}>
           <h2>Hello!</h2>
           <h2>
-            I&apos;m Manuel, a <Link href="/cv/">web developer</Link> from
-            Hamburg.
+            I&apos;m Manuel, a <Link href="/cv/">web developer</Link> from{' '}
+            <s>Hamburg</s> Berlin.
           </h2>
           <p>
             When I&apos;m not pushing pixels and code in front of a monitor, I
