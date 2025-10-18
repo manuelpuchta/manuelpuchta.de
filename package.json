@@ -1,7 +1,7 @@
 {
   "name": "manuelpuchta.de",
-  "description": "My personal website, built with Next.js",
-  "version": "1.1.0",
+  "description": "My personal website, built with Eleventy",
+  "version": "2.0.0",
   "author": "Manuel Puchta <dev@manuelpuchta.de>",
   "homepage": "https://github.com/manuelpuchta/manuelpuchta.de#readme",
   "license": "MIT",
@@ -12,35 +12,24 @@
   "bugs": {
     "url": "https://github.com/manuelpuchta/manuelpuchta.de/issues"
   },
+  "type": "module",
   "scripts": {
-    "lint": "eslint '*/**/*.{js,ts,tsx}'",
-    "test": "echo \"Write tests!\"",
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "date-fns": "^2.29.1",
-    "gray-matter": "^4.0.3",
-    "next": "^14.0.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "remark": "^14.0.2",
-    "remark-html": "^15.0.1"
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^12.2.3",
-    "@types/node": "^18.0.6",
-    "@types/react": "^18.0.15",
-    "@typescript-eslint/eslint-plugin": "^5.30.7",
-    "@typescript-eslint/parser": "^5.30.7",
-    "eslint": "^8.20.0",
-    "eslint-config-next": "^12.2.3",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.30.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "prettier": "^2.7.1",
-    "typescript": "^4.7.4"
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-img": "^6.0.4",
+    "@11ty/eleventy-navigation": "^1.0.4",
+    "@11ty/eleventy-plugin-rss": "^2.0.4",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "cross-env": "^7.0.3",
+    "luxon": "^3.6.1",
+    "prismjs": "^1.30.0",
+    "zod": "^3.25.67",
+    "zod-validation-error": "^3.5.2"
+  },
+  "dependencies": {
+    "@zachleat/heading-anchors": "^1.0.5"
   }
 }

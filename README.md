@@ -1,28 +1,31 @@
 # [manuelpuchta.de](https://manuelpuchta.de/)
 
-- build with [Next.js](https://nextjs.org/learn/basics/create-nextjs-app/setup)
-- initially used starter template: [TypeScript](https://github.com/vercel/next-learn-starter/tree/master/typescript-final)
+- build with [11ty](https://www.11ty.dev/)
+- initially used starter template: [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog)
 
 ## Configuration
 
-Create `.env.local` file and add the following variables:
+### Install dependencies
 
 ```sh
-HOST=http://localhost:3000
+npm install
 ```
 
-## Development
+## Run Eleventy
+
+### Development
+
+#### Build and host this site locally
 
 ```sh
-# use correct node version
-nvm use
+# runs on a development server
+npm start
+```
 
-# install dependencies once
-npm i
+#### Generate a production-ready build
 
-# start dev server
-npm run dev
+Will be stored within the `_site` folder.
 
-# generate static HTML export
+```sh
 npm run build
 ```
