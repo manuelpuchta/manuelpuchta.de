@@ -6,9 +6,16 @@ const eleventyNavigation = {
 
 const numberOfLatestPostsToShow = 3;
 ---
+
+<img src="./portrait-500.jpg" alt="A black and white portrait of Manuel Puchta, the author of this website" width="280" height="280">
+
+<h1>Hi! I&apos;m Manuel, a <a href="/cv.md">web developer</a> from Hamburg.</h1>
+
+<p>When I&apos;m not pushing pixels and code in front of a monitor, I love to ride far on my bike, listen to music or capture moments with my camera.</p>
+
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
+<h2>Latest {{ latestPostsCount }} post{% if latestPostsCount != 1 %}s{% endif %}</h2>
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
