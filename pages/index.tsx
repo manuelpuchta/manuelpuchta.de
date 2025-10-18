@@ -30,24 +30,21 @@ const Home: React.FC<HomeProps> = ({ allPostsData }: HomeProps) => (
   >
     <section className={styles.grid}>
       <div>
-        <div className={styles.portrait}>
-          <Image
-            loader={imageLoader}
-            src={'images/portrait-500.jpg'}
-            alt="A black and white portrait of Manuel Puchta, the author of this website"
-            width={280}
-            height={280}
-            priority
-          />
-        </div>
+        <Image
+          loader={imageLoader}
+          src={'images/portrait-500.jpg'}
+          alt="A black and white portrait of Manuel Puchta, the author of this website"
+          width={280}
+          height={280}
+          priority
+        />
       </div>
 
       <div>
         <div className={styles.intro}>
-          <h2>Hello!</h2>
           <h2>
-            I&apos;m Manuel, a <Link href="/cv/">web developer</Link> from{' '}
-            <s>Hamburg</s> Berlin.
+            Hello! I&apos;m Manuel, a <Link href="/cv/">web developer</Link>{' '}
+            from Berlin.
           </h2>
           <p>
             When I&apos;m not pushing pixels and code in front of a monitor, I
@@ -58,64 +55,40 @@ const Home: React.FC<HomeProps> = ({ allPostsData }: HomeProps) => (
       </div>
 
       <div>
-        <div className="inverted">
-          <h2>Notes</h2>
-          <ul>
-            {allPostsData.map(({ id, date, title }) => (
-              <li key={id} className="post">
-                <h3>
-                  <Link href={`/posts/${id}`}>{title}</Link>
-                </h3>
-                <small>
-                  <Date dateString={date} />
-                </small>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <h2>Notes</h2>
+        <ul>
+          {allPostsData.map(({ id, date, title }) => (
+            <li key={id} className="post">
+              <h3>
+                <Link href={`/posts/${id}`}>{title}</Link>
+              </h3>
+              <small>
+                <Date dateString={date} />
+              </small>
+            </li>
+          ))}
+        </ul>
       </div>
 
       <div>
-        <div className={styles.stalking}>
-          <svg viewBox="0 0 300 300">
-            <path
-              id="circle"
-              fill="transparent"
-              d="M 150, 150
-              m -125, 0
-              a 125, 125 0 1, 1 250, 0
-              a 125, 125 0 1, 1 -250, 0"
-            />
-            <text width="300">
-              <textPath xlinkHref="#circle" fontSize={'1.25rem'}>
-                Send nice emails &rarr;{' '}
-                <a href="mailto:hallo@manuelpuchta.de">
-                  hallo[at]manuelpuchta.de
-                </a>{' '}
-                || stalk by:
-              </textPath>
-            </text>
-          </svg>
-
-          <ul>
-            <li>
-              <a
-                href="https://github.com/manuelpuchta"
-                title="My GitHub profile: bits and bytes, also lot's of stars."
-              >
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/manuelpuchta/"
-                title="I have a LinkedIn profile."
-              >
-                LinkedIn
-              </a>
-            </li>
-          </ul>
-        </div>
+        <p>
+          You can send me nice emails to{' '}
+          <a href="mailto:hallo@manuelpuchta.de">hallo[at]manuelpuchta.de</a> or
+          find me at{' '}
+          <a
+            href="https://github.com/manuelpuchta"
+            title="My GitHub profile: bits and bytes, also lot's of stars."
+          >
+            GitHub
+          </a>{' '}
+          and{' '}
+          <a
+            href="https://www.linkedin.com/in/manuelpuchta/"
+            title="I have a LinkedIn profile."
+          >
+            LinkedIn
+          </a>
+        </p>
       </div>
     </section>
   </Layout>
