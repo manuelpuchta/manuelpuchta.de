@@ -1,22 +1,4 @@
-# dependencies
-/node_modules
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
+_site/
+node_modules/
+.cache
 .DS_Store
-.env.local
-
-# debug
-npm-debug.log*
-
-# local env files
-.env.local
