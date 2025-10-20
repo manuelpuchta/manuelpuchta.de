@@ -1,5 +1,5 @@
 ---js
-const title = "This is a fifth post";
+const title = "This is a draft post";
 const date = "2023-01-23";
 const draft = true;
 ---

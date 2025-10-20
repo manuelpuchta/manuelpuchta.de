@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
+		<link rel="icon" href="/icons/favicon.ico" />
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
@@ -63,12 +64,14 @@
 		</main>
 
 		<footer>
+			<p>&rarr; <a href="/">Home</a></p>
 			<p>
 				<em>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a> and hosted on <a href="https://uberspace.de">Uberspace</a>.</em>
-				<br/>
+			</p>
+			<p>
 				This is a personal website. 
 				No cookies. 
-				GDPR-friendly <a href="https://www.goatcounter.com/">GoatCounter</a> allows me to see if anyone is stopping by here.
+				GDPR-friendly <a href="https://www.goatcounter.com/">GoatCounter</a> allows me to see if anyone is stopping by <a href="https://manuelpuchta.goatcounter.com/">here</a>.
 			</p>
 		</footer>
 
