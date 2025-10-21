@@ -7,11 +7,11 @@ const eleventyNavigation = {
 
 # CV
 
-## Manuel Puchta
+Location: Hamburg, Germany\
+Mail: [hallo[at]manuelpuchta.de](mailto:hallo@manuelpuchta.de)\
+Web: [https://manuelpuchta.de](https://manuelpuchta.de)
 
-- Location: Hamburg, Germany
-- Mail: [hallo[at]manuelpuchta.de](mailto:hallo@manuelpuchta.de)
-- Web: [https://manuelpuchta.de](https://manuelpuchta.de)
+## Manuel Puchta
 
 **I'm a Web Engineer.** What I love to do: Building easy-to-use, responsive and accessible interfaces that put a smile on the face of people using them. Ensuring that everything scales well by designing and implementing the underlying architecture. Shipping frequently to live. Making a product better. Working in a team.
 
@@ -21,11 +21,13 @@ const eleventyNavigation = {
 
 **(Now)** Since Sep 2024, Berlin (Germany)
 
-Project: Kommunikationsplattform
+**Project: Kommunikationsplattform**
 
-- As part of an interdisciplinary team, I am helping to create a new web application in the judicial landscape: a communication platform (Kommunikationsplattform).
-  In the future, this platform will be used to test how procedural communication in civil proceedings can be carried out via a uniform federal platform.
-  Further initial information on this project can be found on the DigitalService blog: [First steps for a communication platform ](https://digitalservice.bund.de/blog/erste-schritte-fuer-eine-kommunikationsplattform-fuer-zivilgerichtliche-online-verfahren) (currently only available in German).
+As part of an interdisciplinary team, I am helping to create a new web application in the judicial landscape: a communication platform (Kommunikationsplattform).
+
+In the future, this platform will be used to test how procedural communication in civil proceedings can be carried out via a uniform federal platform.
+
+Further initial information on this project can be found on the DigitalService blog: [First steps for a communication platform ](https://digitalservice.bund.de/blog/erste-schritte-fuer-eine-kommunikationsplattform-fuer-zivilgerichtliche-online-verfahren) (currently only available in German).
 
 ---
 
