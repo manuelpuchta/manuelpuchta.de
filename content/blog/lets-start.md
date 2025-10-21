@@ -7,7 +7,7 @@ tags: ["notepad"]
 
 I want to fill this place of the internet more often in the future. With random [thoughts](/tags/notepad), with [photos](/tags/moments), with beautiful [trips](/tags/outdoors) I took on my bike. Perhaps I will also share [challenges](/tags/code) in my daily life as a software engineer. We'll see how it goes.
 
-Social media sucks often these day and who knows for how long it will still be a thing, right?
+Social media sucks often these days and who knows for how long it will still be a thing, right?
 
 Here we go.
 
