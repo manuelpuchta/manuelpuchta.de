@@ -1,7 +1,7 @@
 ---
 title: Germany slips back into fascism
 description: Our current government is failing. We are on the path to authoritarianism.
-date: 2025-10-22
+date: 2025-10-21
 tags: ["notepad"]
 ---
 
