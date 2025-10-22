@@ -101,24 +101,24 @@ iframe {
 	aspect-ratio: 16/9;
 }
 
-/* https://typescale.com/ - Minor Third */
+/* https://typescale.com/ - Major Second */
 h1 {
-	font-size: 2.986rem;
+	font-size: 2.027rem;
 }
 h2 {
-	font-size: 2.488rem;
+	font-size: 1.802rem;
 }
 h3 {
-	font-size: 2.074rem;
+	font-size: 1.602rem;
 }
 h4 {
-	font-size: 1.728rem;
+	font-size: 1.424rem;
 }
 h5 {
-	font-size: 1.44rem;
+	font-size: 1.266rem;
 }
 h6 {
-	font-size: 1.2rem;
+	font-size: 1.125rem;
 }
 
 p:last-child {
