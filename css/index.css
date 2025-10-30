@@ -160,8 +160,22 @@ main :first-child {
 	margin-top: 0;
 }
 
+.footnotes {
+	padding: 1em 0;
+}
+.footnotes ol {
+	margin: 0;
+	font-size: 0.875rem;
+}
+
 footer {
+	margin-top: 2rem;
 	padding: 1rem 1rem 5rem;
+}
+footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 #skip-link {
@@ -186,8 +200,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	gap: 0.5em 1em;
-	list-style: "";
-	border-top: 1px dashed var(--color-gray-20);
+	list-style: none;
 	padding: 1em 0;
 }
 .links-nextprev > * {
