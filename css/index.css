@@ -159,6 +159,10 @@ main {
 main :first-child {
 	margin-top: 0;
 }
+main picture {
+	margin-top: 1rem;
+	display: block;
+}
 
 .footnotes {
 	padding: 1em 0;
