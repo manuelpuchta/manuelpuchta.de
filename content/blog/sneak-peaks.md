@@ -1,5 +1,5 @@
 ---
-title: Sneak Peaks 2025
+title: Sneak Peaks
 description: A few words and further links about my first ultracycling adventure.
 date: 2025-12-30
 tags: ["outdoors"]
