@@ -7,7 +7,7 @@ tags: ["notepad"]
 
 ## Recap: A lot has happened this year.
 
-1. Arriving in Berlin, sorta.
+1. Arriving in Berlin, kinda.
 
 ![View from the Humboldt Forum over Berlin](./recap-1.jpg)
 
