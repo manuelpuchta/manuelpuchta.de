@@ -29,7 +29,7 @@ tags: ["notepad"]
 ![Having good food at FREA](./recap-2.jpg)
 
 9. Enjoyed a [PUP](https://youtu.be/aa3Afg3fzAQ?si=av2t0_Y42fkqhF-6) concert at Hole44.
-10. Spent time on Borkum with Linnea's family.
+10. We spent time on Borkum with Linnea's family, and on the way to the island we enjoyed two days in Groningen (what a beautiful and livable city!).
 
 ![Borkum beach](./recap-5.jpg)
 
@@ -55,7 +55,8 @@ It was a really good year. Deliberately exhausting, especially due to another mo
 
 - Turnstile - [Never enough](https://youtu.be/Nfk1Su1Q8SI?si=JMAjfzwSoWUNH56B)
 - Deftones - [Private music](https://youtu.be/U_uVVO7eGic?si=BA1b3jJt4M9DHVv1)
-- Baxter Dury - [Allbarone](https://youtu.be/8aDR5Wuhj6Q?si=htTuaExdE2dyBT-H)
+- Wet Leg - [Moisturizr](https://youtu.be/HeL2M8jBEI4?si=qaj-j0mq469Vjq1l)
+- ~~Baxter Dury - [Allbarone](https://youtu.be/8aDR5Wuhj6Q?si=htTuaExdE2dyBT-H)~~
 
 And, as always, we listened a lot to [Mac DeMarco](https://youtu.be/csJZ_9KOtNY?si=N_m6-UsyhGLe1iFN). Also, I enjoyed the new [Kraftklub](https://youtu.be/6Jh5WcIp5jU?si=4D34VSfoo2UZ3ssD) album. ¯\\\_(ツ)\_/¯
 
