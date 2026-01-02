@@ -64,24 +64,18 @@
 			</heading-anchors>
 		</main>
 
+		{%- if page.url !== "/" %}
 		<footer>
 			<nav>
 				<h2 class="visually-hidden">Navigation menu at the bottom of this page</h2>
 				<ul>
 					<li>
-						&bigstar; <a href="/">Home</a>
+						Click here to return to the <a href="/">home page</a>.
 					</li>
 				</ul>
 			</nav>
-			<p>
-				<em>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a> and hosted on <a href="https://uberspace.de">Uberspace</a>.</em>
-			</p>
-			<p>
-				This is a personal website. 
-				No cookies. 
-				GDPR-friendly <a href="https://www.goatcounter.com/">GoatCounter</a> allows me to see if anyone is stopping by here: <a href="https://manuelpuchta.goatcounter.com/">GoatCounter dashboard</a>.
-			</p>
 		</footer>
+		{%- endif %}
 
 		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
 		<script type="module" src="{% getBundleFileUrl "js" %}"></script>
