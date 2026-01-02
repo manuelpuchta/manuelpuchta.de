@@ -7,8 +7,6 @@ tags: ["notepad"]
 
 **TLDR:** [I want to read about Berlin](#living-in-berlin).
 
----
-
 I can't remember exactly, but it must have been just before I turned 30. So sometime around the end of 2015, beginning of 2016. I needed a change. Hamburg had become boring, hadn't it? Not exciting enough anymore. I also didn't feel comfortable in the neighborhood where I had been living. At the time, I was living in my first apartment in Eimsbüttel, Lutterothstraße. I had left my shared apartment life behind and was enjoying living alone. But that also left me with more space to worry about everything. All the young and presumably happy families with their strollers, whom I had to pass on my way to work or to visit my friends, reminded me too much of a traditional life. Which felt far too conservative to me. After all, I was at a completely different point in my life. And that was fine. I had wonderful friends. I enjoyed being out and about, going to as many concerts as possible, and living in the here and now when I wasn't busy with work.
 
 Every now and then, I also thought about just dropping everything and moving to Berlin.

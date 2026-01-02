@@ -8,7 +8,7 @@ const eleventyNavigation = {
 # CV
 
 Location: Hamburg, Germany\
-Mail: [hallo[at]manuelpuchta.de](mailto:hallo@manuelpuchta.de)\
+Mail: [mvstuckrad[at]pm.me](mailto:mvstuckrad@pm.me)\
 Web: [https://manuelpuchta.de](https://manuelpuchta.de)
 
 ## Manuel Puchta
@@ -27,7 +27,7 @@ As part of an interdisciplinary team, I am helping to create a new web applicati
 
 In the future, this platform will be used to test how procedural communication in civil proceedings can be carried out via a uniform federal platform.
 
-Further initial information on this project can be found on the DigitalService blog: [First steps for a communication platform ](https://digitalservice.bund.de/blog/erste-schritte-fuer-eine-kommunikationsplattform-fuer-zivilgerichtliche-online-verfahren) (currently only available in German).
+Further initial information on this project can be found on the DigitalService blog: [First steps for a communication platform ](https://digitalservice.bund.de/blog/erste-schritte-fuer-eine-kommunikationsplattform-fuer-zivilgerichtliche-online-verfahren).
 
 ---
 
@@ -134,4 +134,4 @@ Tech stack: _Django, AngularJS v1, Vanilla JS, AngularJS v1, Less, SCSS with BEM
 
 Still here? Thank you.
 
-Mail: [hallo[at]manuelpuchta.de](mailto:hallo@manuelpuchta.de)
+Mail: [mvstuckrad[at]pm.me](mailto:mvstuckrad@pm.me)
