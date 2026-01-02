@@ -33,21 +33,22 @@ tags: ["notepad"]
 
 ![Borkum beach](./recap-5.jpg)
 
-11. A trip to [Paris](/blog/a-long-weekend-in-paris/) happened, including watching the Tour de France finale. 💛
-12. Linnea and I got married on a whim. 💕
+11. We missed Hamburg too much and decided to say goodbye to [Berlin](/blog/berlin/) again.
+12. A trip to [Paris](/blog/a-long-weekend-in-paris/) happened, including watching the Tour de France finale. 💛
+13. Linnea and I got married on a whim. 💕
 
 ![Getting married](./recap-6.jpg)
 
-13. I rode my first ultracycling event in September: [Sneak Peaks](/blog/sneak-peaks/).
+14. I rode my first ultracycling event in September: [Sneak Peaks](/blog/sneak-peaks/).
 
 ![Sneak Peaks](./recap-11.jpg)
 _Picture from [Saskia Martin](https://www.instagram.com/saskiacmartin/)_
 ![Sneak Peaks](./recap-9.jpg)
 ![Sneak Peaks](./recap-10.jpg)
 
-14. Two fantastic weeks of doing nothing in [Portugal](/blog/babymoon-in-portugal/).
-15. The search for an apartment in Hamburg was successful.
-16. The last quarter consisted mainly of preparations for the move, moving back to Hamburg, and settling into the new apartment.
+15. Two fantastic weeks of doing nothing in [Portugal](/blog/babymoon-in-portugal/).
+16. The search for an apartment in Hamburg was successful.
+17. The last quarter consisted mainly of preparations for the move, moving back to Hamburg, and settling into the new apartment.
 
 It was a really good year. Deliberately exhausting, especially due to another move back to Hamburg. But also wonderful, as Linnea and I are returning as a married couple. Neither of us could have imagined that two or three years ago. We are currently preparing for our next adventure, as we are expecting a baby soon. It couldn't be better. I'm looking forward to the new year.
 
