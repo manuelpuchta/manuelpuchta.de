@@ -1,10 +1,10 @@
 /* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
-	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono,
-		Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono,
-		Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New,
-		Courier, monospace;
+	--font-family-monospace:
+		Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console,
+		Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono,
+		Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
 /* Theme colors */
@@ -52,7 +52,6 @@
 html,
 body {
 	padding: 0;
-	margin: 0 auto;
 	font-family: var(--font-family);
 	color: var(--text-color);
 	background-color: var(--background-color);
@@ -61,8 +60,7 @@ html {
 	overflow-y: scroll;
 }
 body {
-	padding-bottom: 2em;
-	max-width: 40em;
+	padding-bottom: 5em;
 }
 
 /* spacings */
@@ -151,7 +149,9 @@ hr {
 }
 
 main {
-	padding: 1rem;
+	padding: 3rem 1rem;
+	max-width: 40em;
+	margin: 0 auto;
 }
 main :first-child {
 	margin-top: 0;
@@ -171,6 +171,8 @@ main picture {
 
 footer {
 	padding: 1rem;
+	max-width: 40em;
+	margin: 0 auto;
 }
 footer ul {
 	margin: 0;
@@ -201,7 +203,7 @@ footer ul {
 	justify-content: space-between;
 	gap: 0.5em 1em;
 	list-style: none;
-	padding: 1em 0 0;
+	padding: 3em 0 0;
 }
 .links-nextprev > * {
 	flex-grow: 1;
@@ -251,7 +253,13 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 1em;
-	border-bottom: 1px dashed var(--color-gray-20);
+	max-width: 60em;
+	margin: 0 auto;
+	opacity: 0.25;
+	transition: opacity 0.2s ease-in-out;
+}
+header:hover {
+	opacity: 1;
 }
 .home-link {
 	flex-grow: 1;
@@ -326,20 +334,24 @@ header {
 
 /* Post meta at the end of a post */
 .post-meta {
-	padding: 2em 0 0;
-	margin: 3em 0 0;
+	padding: 0;
+	margin: 0;
 	line-height: 1.5;
-	border-top: 1px dashed var(--color-gray-20);
 }
 
 /* Tags list */
 .post-metadata {
 	display: inline-flex;
 	flex-wrap: wrap;
-	gap: 0.5em;
 	list-style: none;
 	padding: 0;
 	margin: 0;
+}
+.post-metadata li {
+	margin-left: 0.5em;
+}
+.post-metadata li:first-child {
+	margin-left: 0.25em;
 }
 
 /* Tags */

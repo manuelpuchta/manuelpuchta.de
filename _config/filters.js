@@ -4,7 +4,7 @@ export default function filters(eleventyConfig) {
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
 		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(
-			format || "dd LLLL yyyy"
+			format || "LLLL dd, yyyy",
 		);
 	});
 
@@ -40,6 +40,6 @@ export default function filters(eleventyConfig) {
 	});
 
 	eleventyConfig.addFilter("sortAlphabetically", (strings) =>
-		(strings || []).sort((b, a) => b.localeCompare(a))
+		(strings || []).sort((b, a) => b.localeCompare(a)),
 	);
 }
