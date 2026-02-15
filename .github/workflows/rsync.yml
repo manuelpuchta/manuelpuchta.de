@@ -15,28 +15,28 @@ jobs:
         uses: shimataro/ssh-key-action@v2
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          known_hosts: ${{ secrets.KNOWN_HOSTS }}
+          known_hosts: "placeholder"
 
       - name: Adding known_hosts
         run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
       - name: Check out repository code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 20
-          cache: "npm"
+          node-version-file: .tool-versions
+          cache: npm
 
       - name: Cache npm
-        uses: actions/cache@v3
+        uses: actions/cache@v5
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
 
       - name: Cache Eleventy .cache
-        uses: actions/cache@v3
+        uses: actions/cache@v5
         with:
           path: ./.cache
           key: ${{ runner.os }}-eleventy-fetch-cache
