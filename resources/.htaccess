@@ -11,8 +11,14 @@
 # Redirects
 # ----------------------------------------------------------------------
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteRule ^/?posts/(.*)$ /blog/$1 [L,R=301]
+    RewriteEngine On
+
+    # Exclude root route and index.html from redirecting to new URL
+    RewriteCond %{REQUEST_URI} !^/$
+    RewriteCond %{REQUEST_URI} !^/index\.html$
+
+    # Redirect all other requests to new URL
+    RewriteRule ^(.*)$ https://manuel.vonstuckrad.net/$1 [R=301,L]
 </IfModule>
 
 # ----------------------------------------------------------------------
