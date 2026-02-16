@@ -255,11 +255,7 @@ header {
 	padding: 1em;
 	max-width: 60em;
 	margin: 0 auto;
-	opacity: 0.25;
-	transition: opacity 0.2s ease-in-out;
-}
-header:hover {
-	opacity: 1;
+	opacity: 0.5;
 }
 .home-link {
 	flex-grow: 1;
